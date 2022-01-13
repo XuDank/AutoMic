@@ -8,30 +8,22 @@ from numpy.linalg import norm
 
 
 def position_input():
-
     while True:
-
         try:
-
             user_input = [float(coordinate) for coordinate in input(
                 "Enter the coordinates: ").split()]
 
             match len(user_input):
-
                 case 1:
-
                     return np.array([0, 0] + user_input)
 
                 case 2:
-
                     return np.array(user_input + [0])
 
                 case 3:
-
                     return np.array(user_input)
 
         except:
-
             print("Invalid input!")
 
 
