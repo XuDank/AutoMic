@@ -4,7 +4,6 @@
 #include <Arduino.h>
 
 #include <PID_v1.h>
-#include <PID_AutoTune_v0.h>
 
 #define CHA 2
 #define CHB 3
@@ -23,7 +22,6 @@ double tar = 0, pwm;
 double kP = 10.0, kI = 1.0, kD = 0.0;
 
 PID myPID(&count, &pwm, &tar, kP, kI, kD, DIRECT);
-PID_ATune aTune(&count, &pwm);
 
 void motor()
 {

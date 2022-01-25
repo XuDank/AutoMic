@@ -6,7 +6,6 @@ from datetime import datetime
 from ipaddress import ip_address as adr
 from numpy.linalg import norm
 
-
 def position_input():
     while True:
         try:
@@ -48,8 +47,8 @@ class Motor:
 
     def edit(self):
         menu = {0: "Exit"}
-        menu.update({menu.keys()[-1] + 1: name.capitalize()
-                     for name in vars(self).keys() if name not in ["target", "edit"]})
+        menu.update({list(menu.keys())[-1] + index: name.capitalize()
+                     for index, name in enumerate(vars(self).keys(), 1) if name not in ["target", "edit"]})
 
         while True:
             for key in sorted(menu.keys()):
@@ -69,7 +68,7 @@ class Motor:
                     while True:
                         try:
                             self.ip_address = (
-                                adr(input("Enter the IP address: ")), 5000)
+                                str(adr(input("Enter the IP address: "))), 5000)
                         except:
                             print("Invalid IP ip_address!")
                         else:
@@ -104,7 +103,7 @@ class Motor:
         print(
             f"[{datetime.now()}] Recieved: {count} from: {self.ip_address[0]}", file=self.log)
 
-        return int(count)
+        return float(count)
 
     def send_target(self, position):
         self.target = norm(self.position - position) * self.steps_per_inch
@@ -151,8 +150,8 @@ class Motor:
 
         menu = {0: "Exit",
                 1: "Move"}
-        menu.update({menu.keys()[-1] + 1: name.capitalize()
-                     for name in method_list if name not in ["motors"]})
+        menu.update({list(menu.keys())[-1] + index: name.capitalize()
+                     for index, name in enumerate(method_list, 1) if name not in ["motors"]})
 
         while True:
             for key in sorted(menu.keys()):
@@ -239,8 +238,8 @@ class Mic:
         menu = {0: "Exit",
                 1: "Add a motor",
                 2: "Delete a motor"}
-        menu.update({menu.keys()[-1] + 1: name.capitalize()
-                     for name in vars(self).keys() if name not in []})
+        menu.update({list(menu.keys())[-1] + index: name.capitalize()
+                     for index, name in enumerate(vars(self).keys(), 1) if name not in []})
 
         while True:
             for key in sorted(menu.keys()):
@@ -306,7 +305,8 @@ class Mic:
                     self.edit()
 
                 case "Select a motor":
-                    menu = {motor.id: motor for motor in self.motors}
+                    menu = {0: "Exit"}
+                    menu.update({motor.id: motor for motor in self.motors})
 
                     for key in sorted(menu.keys()):
                         print(f"{key}: {menu[key]}")
@@ -351,8 +351,8 @@ def edit_mics():
 
 def recall_set():
     menu = {0: ("Exit")}
-    menu.update({menu.keys()[-1] + 1: (set_name, sets[set_name])
-                 for set_name in sets.keys()})
+    menu.update({list(menu.keys())[-1] + index: (set_name, sets[set_name])
+                 for index, set_name in enumerate(sets.keys())})
 
     while True:
         for key in sorted(menu.keys()):
@@ -373,8 +373,8 @@ def recall_set():
 
 def remove_set():
     menu = {0: ("Exit")}
-    menu.update({menu.keys()[-1] + 1: set_name
-                 for set_name in sets.keys()})
+    menu.update({list(menu.keys())[-1] + index: set_name
+                 for index, set_name in enumerate(sets.keys())})
 
     while True:
         for key in sorted(menu.keys()):
@@ -402,21 +402,9 @@ if __name__ == "__main__":
 
     print(mics)
 
-    for mic in mics:
-        user_input = input(f"Do you want to calibrate mic {mic.id}? ")
-
-        if user_input in ["Y", "y"]:
-            mic.calibrate()
-
-            break
-
-        elif user_input in ["N", "n"]:
-            break
-
     # main
     try:
         mics[0].operate()
 
     finally:
         pk.dump((mics, sets), open("config.pkl", "wb"))
-        sets.update({input("Save as: "): mics})

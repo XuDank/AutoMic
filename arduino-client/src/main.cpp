@@ -1,7 +1,7 @@
 #include <Hardware.h>
 #include <Communication.h>
 
-#define BOARD_NUM 2
+#define BOARD_NUM 3
 
 void setup()
 {

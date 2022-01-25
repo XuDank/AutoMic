@@ -17,19 +17,19 @@ void ethernet(int board)
 
     Ethernet.begin(MAC, IP);
 
-    while (1)
-    {
-        if (!Ethernet.hardwareStatus())
-        {
-            Serial.println("Ethernet shield was not found.");
-        }
-        else if (Ethernet.linkStatus() == LinkOFF)
-        {
-            Serial.println("Ethernet cable is not connected.");
-            continue;
-        }
-        break;
-    }
+    // while (1)
+    // {
+    //     if (!Ethernet.hardwareStatus())
+    //     {
+    //         Serial.println("Ethernet shield was not found.");
+    //     }
+    //     else if (Ethernet.linkStatus() == LinkOFF)
+    //     {
+    //         Serial.println("Ethernet cable is not connected.");
+    //         continue;
+    //     }
+    //     break;
+    // }
 
     Udp.begin(PORT);
 
