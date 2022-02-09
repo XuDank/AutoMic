@@ -7,7 +7,6 @@
 
 #define CHA 2
 #define CHB 3
-#define K 327.48538
 
 #define IN1 5
 #define IN2 6
@@ -72,7 +71,7 @@ void encoder(void (*f)())
     pinMode(CHA, INPUT);
     pinMode(CHB, INPUT);
     attachInterrupt(digitalPinToInterrupt(CHA), f, RISING);
-    count = 0;
+    count = 0.0;
 }
 
 #endif

@@ -22,8 +22,9 @@ void loop()
 
     if (isDigit(com[0]))
     {
-      tar = com.toInt();
+      tar = com.toDouble();
       Serial.println("Target: " + String(tar));
+      setPWM();
     }
 
     else
@@ -36,7 +37,7 @@ void loop()
 
       case 'E':
         com.remove(0);
-        count = com.toInt();
+        count = com.toDouble();
         tar = count;
         out(String(count));
         break;
@@ -68,7 +69,12 @@ void loop()
     }
   }
 
-  setPWM();
+  while(pwm != 0.0){
+    setPWM();
 
-  delay(5);
+    Serial.println("Target: " + String(tar));
+    Serial.println("Count: " + String(count));
+    Serial.println("PWM: " + String(pwm));
+    delay(250);
+  }
 }

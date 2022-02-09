@@ -1,3 +1,4 @@
+from time import sleep
 import numpy as np
 import pickle as pk
 import socket as skt
@@ -27,16 +28,18 @@ def position_input():
 
 
 class Motor:
-    steps_per_inch = 327.48538
     log = open("log.txt", "a+")
     socket = skt.socket(skt.AF_INET, skt.SOCK_DGRAM)
-    socket.settimeout(0)
+    socket.settimeout(10)
 
     def __init__(self, id=0, ip="192.168.1.2", position=np.array([0, 0, 0])):
         self.id = id
         self.ip_address = (ip, 5000)
         self.position = position
         self.length = self.get_length()
+        self.pulses_per_revolution = 150 * 11
+        self.spool_diameter = 5
+        self.pulses_per_inch = self.pulses_per_revolution / (np.pi * self.spool_diameter)
         self.target = self.length
 
     def __str__(self):
@@ -47,8 +50,8 @@ class Motor:
 
     def edit(self):
         menu = {0: "Exit"}
-        menu.update({list(menu.keys())[-1] + index: name.capitalize()
-                     for index, name in enumerate(vars(self).keys(), 1) if name not in ["target", "edit"]})
+        menu.update({list(menu.keys())[-1] + index: name
+                     for index, name in enumerate(vars(self).keys(), 1) if name not in ["target", "edit", "pulses_per_inch"]})
 
         while True:
             for key in sorted(menu.keys()):
@@ -61,23 +64,47 @@ class Motor:
                 case "Exit":
                     break
 
-                case "Id":
+                case "id":
+                    print(f"Current id: {self.id}")
                     self.id = int(input("Enter the ID: "))
 
-                case "Ip_address":
+                case "ip_address":
+                    print(f"Current ip address: {self.ip_address}")
+
                     while True:
                         try:
                             self.ip_address = (
-                                str(adr(input("Enter the IP address: "))), 5000)
+                                str(adr(input("Enter the ip address: "))), 5000)
                         except:
-                            print("Invalid IP ip_address!")
+                            print("Invalid ip address!")
                         else:
                             break
 
-                case "Position":
+                case "spool_diameter":
+                    print(f"Current spool_diameter: {self.spool_diameter}")
+
+                    self.spool_diameter = float(input("Enter the spool_diameter: "))
+                    self.pulses_per_inch = self.pulses_per_revolution / (np.pi * self.spool_diameter)
+
+                case "pulses_per_revolution":
+                    print(f"Current pulses_per_revolution: {self.pulses_per_revolution}")
+
+                    self.pulses_per_revolution = float(input("Enter the pulses_per_revolution: "))
+                    self.pulses_per_inch = self.pulses_per_revolution / (np.pi * self.spool_diameter)
+
+                case "pulses_per_inch":
+                    print(f"Current pulses_per_inch: {self.pulses_per_inch}")
+                    self.pulses_per_inch = self.pulses_per_revolution / (np.pi * self.spool_diameter)
+                    print(f"Updated pulses_per_inch: {self.pulses_per_inch}")
+
+                case "position":
+                    print(f"Current position: {self.position}")
+
                     self.position = position_input()
 
-                case "Length":
+                case "length":
+                    print(f"Current length: {self.length}")
+
                     self.length = float(input("Enter the length: "))
 
         return self
@@ -103,12 +130,12 @@ class Motor:
         print(
             f"[{datetime.now()}] Recieved: {count} from: {self.ip_address[0]}", file=self.log)
 
-        return float(count)
+        return float(count) / self.pulses_per_inch
 
     def send_target(self, position):
-        self.target = norm(self.position - position) * self.steps_per_inch
+        self.target = norm(self.position - position)
 
-        return self.send(str(int(self.target)))
+        return self.send(str(self.target) * self.pulses_per_inch)
 
     def get_length(self):
         self.send("P")
@@ -140,7 +167,7 @@ class Motor:
 
     def compute_error(self):
         self.get_length()
-        error = (self.target - self.length) / self.length
+        error = (self.target - self.length)
 
         return error
 
@@ -149,9 +176,10 @@ class Motor:
             Motor) if method.startswith('__') is False]
 
         menu = {0: "Exit",
-                1: "Move"}
-        menu.update({list(menu.keys())[-1] + index: name.capitalize()
-                     for index, name in enumerate(method_list, 1) if name not in ["motors"]})
+                1: "move (absolute)",
+                2: "move (relative)"}
+        menu.update({list(menu.keys())[-1] + index: name
+                     for index, name in enumerate(method_list, 1) if name not in ["motors", "log", "operate", "socket"]})
 
         while True:
             for key in sorted(menu.keys()):
@@ -164,11 +192,34 @@ class Motor:
                 case "Exit":
                     break
 
-                case "Move":
+                case "edit":
+                    self.edit()
+
+                case "compute_error":
+                    print(f"Current target: {self.target} cm")
+                    self.get_length()
+                    print(f"Current length: {self.length} cm")
+                    print(f"Current error: {self.compute_error()*10} mm")
+
+                case "move (absolute)":
                     while True:
                         try:
-                            user_input = self.steps_per_inch * \
-                                float(input("Enter the amount: "))
+                            user_input = float(input("Enter the amount: "))
+
+                        except:
+                            print("Invalid input!")
+
+                        else:
+                            break
+
+                    self.target = user_input
+                    print(f"Target: {self.target * self.pulses_per_inch}")
+                    self.send(str(self.target * self.pulses_per_inch))
+
+                case "move (relative)":
+                    while True:
+                        try:
+                            user_input = float(input("Enter the amount: "))
 
                         except:
                             print("Invalid input!")
@@ -177,15 +228,18 @@ class Motor:
                             break
 
                     self.target += user_input
-                    self.send(str(int(self.target)))
+                    print(f"Target: {self.target * self.pulses_per_inch}")
+                    self.send(str(self.target * self.pulses_per_inch))
 
-                    break
+                case "get_length":
+                    self.get_length()
+                    print(f"Current length: {self.length}")
+
 
                 case "set_length":
                     while True:
                         try:
-                            user_input = self.steps_per_inch * \
-                                float(input("Enter the value: "))
+                            user_input = float(input("Enter the value: "))
 
                         except:
                             print("Invalid input!")
@@ -194,7 +248,7 @@ class Motor:
                             break
 
                     self.set_length(user_input)
-                    print(f"Got: {self.length}")
+                    print(f"Current length: {self.length}")
 
 
 class Mic:
@@ -225,12 +279,11 @@ class Mic:
         stop = position
         distance = stop - start
 
-        num_steps = round(norm(distance) / self.motors[0].steps_per_inch)
 
-        for step in range(num_steps):
+        for step in np.arange(0, norm(distance)) / norm(distance):
             for motor in self.motors:
-                motor.send_target(start + num_steps * motor.steps_per_inch)
-                # add a delay
+                motor.send_target(start + step * distance)
+                sleep(.2)
 
         self.position = stop
 
@@ -279,15 +332,14 @@ class Mic:
             motor.operate()
 
     def operate(self):
-
-        menu = {0: "Exit",
-                1: "Calibrate",
-                2: "Home",
-                3: "Move",
-                4: "Edit",
-                5: "Select a motor"}
-
         while True:
+            menu = {0: "Exit",
+                    1: "Calibrate",
+                    2: "Home",
+                    3: "Move",
+                    4: "Edit",
+                    5: "Select a motor"}
+                    
             for key in sorted(menu.keys()):
                 print(f"{key}: {menu[key]}")
 
@@ -305,16 +357,20 @@ class Mic:
                     self.edit()
 
                 case "Select a motor":
-                    menu = {0: "Exit"}
-                    menu.update({motor.id: motor for motor in self.motors})
+                    while True:
+                        menu = {0: "Exit"}
+                        menu.update({index: motor for index, motor in enumerate(self.motors, 1)})
 
-                    for key in sorted(menu.keys()):
-                        print(f"{key}: {menu[key]}")
+                        for key in sorted(menu.keys()):
+                            print(f"{key}: {menu[key]}")
 
-                    while (selection := int(input("Make a selection: "))) not in menu.keys():
-                        print("Invalid selection!")
+                        while (selection := int(input("Make a selection: "))) not in menu.keys():
+                            print("Invalid selection!")
 
-                    menu[selection].operate()
+                        if menu[selection] == "Exit":
+                            break
+
+                        menu[selection].operate()
 
                 case "Home":
                     position = position_input()

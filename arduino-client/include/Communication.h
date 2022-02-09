@@ -13,7 +13,7 @@ EthernetUDP Udp;
 void ethernet(int board)
 {
     byte MAC[] = {0xDE, 0xAD, 0xBE, 0xEF, 0xFE, (byte)board}; // MAC address
-    IPAddress IP(192, 168, 1, board + 1);                     // IP adress
+    IPAddress IP(192, 168, 1, board);                     // IP adress
 
     Ethernet.begin(MAC, IP);
 
@@ -32,6 +32,8 @@ void ethernet(int board)
     // }
 
     Udp.begin(PORT);
+
+    Serial.println(IP);
 
     Serial.println("Done with ethernet setup.");
 }
