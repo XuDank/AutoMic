@@ -5,26 +5,22 @@
 
 #include <PID_v1.h>
 
-#define CHA 2
-#define CHB 3
+const int CHA = 2, CHB = 3;
+const int IN1 = 5, IN2 = 6, PWM = 4;
 
-#define IN1 5
-#define IN2 6
-#define PWM 4
+const double MIN_PWM = 0.1 * 255;
 
-int edir = 1, mdir = 1;
-
-double count;
-
-double tar = 0, pwm;
-
-double kP = 10.0, kI = 1.0, kD = 0.0;
+double edir = 0, mdir = 0;
+double count = 0, tar = 0.0, pwm = 0.0;
+double kP = 0.0, kI = 0.0, kD = 0.0;
 
 PID myPID(&count, &pwm, &tar, kP, kI, kD, DIRECT);
 
 void motor()
 {
     myPID.SetMode(AUTOMATIC);
+    myPID.SetOutputLimits(-255.0, 255.0);
+    myPID.SetSampleTime(50); // default is 100
 
     pinMode(IN1, OUTPUT);
     pinMode(IN2, OUTPUT);
@@ -34,7 +30,7 @@ void setPWM()
 {
     myPID.Compute();
 
-    if (abs(pwm) < 30)
+    if (abs(pwm) < MIN_PWM)
     {
         pwm = 0;
     }
@@ -52,6 +48,7 @@ void setPWM()
         digitalWrite(IN2, HIGH);
         analogWrite(PWM, abs(pwm));
     }
+
 }
 
 void interrupt()
@@ -71,7 +68,6 @@ void encoder(void (*f)())
     pinMode(CHA, INPUT);
     pinMode(CHB, INPUT);
     attachInterrupt(digitalPinToInterrupt(CHA), f, RISING);
-    count = 0.0;
 }
 
 #endif

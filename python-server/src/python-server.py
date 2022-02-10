@@ -28,19 +28,25 @@ def position_input():
 
 
 class Motor:
-    log = open("log.txt", "a+")
-    socket = skt.socket(skt.AF_INET, skt.SOCK_DGRAM)
-    socket.settimeout(10)
 
-    def __init__(self, id=0, ip="192.168.1.2", position=np.array([0, 0, 0])):
-        self.id = id
-        self.ip_address = (ip, 5000)
-        self.position = position
-        self.length = self.get_length()
-        self.pulses_per_revolution = 150 * 11
+    def __init__(self):
+
+        self.pulses_per_revolution = 150.0 * 11.0
         self.spool_diameter = 5
-        self.pulses_per_inch = self.pulses_per_revolution / (np.pi * self.spool_diameter)
+        self.pulses_per_cm = self.pulses_per_revolution / (np.pi * self.spool_diameter)
+
+        self.id = 0
+        self.ip_address = ("192.168.1.2", 5000)
+        self.position = np.array([0, 0, 0])
+        self.length = 0.0
         self.target = self.length
+
+        self.motor_direction = 1
+        self.encoder_direction = 1
+
+        self.kP = 0.0
+        self.kI = 0.0
+        self.kD = 0.0
 
     def __str__(self):
         return f"Motor {self.id} (ip = {self.ip_address[0]}, position = {np.array2string(self.position)} cm, length = {self.length} cm)"
@@ -51,7 +57,7 @@ class Motor:
     def edit(self):
         menu = {0: "Exit"}
         menu.update({list(menu.keys())[-1] + index: name
-                     for index, name in enumerate(vars(self).keys(), 1) if name not in ["target", "edit", "pulses_per_inch"]})
+                     for index, name in enumerate(vars(self).keys(), 1) if name not in ["target", "edit", "pulses_per_cm"]})
 
         while True:
             for key in sorted(menu.keys()):
@@ -84,18 +90,18 @@ class Motor:
                     print(f"Current spool_diameter: {self.spool_diameter}")
 
                     self.spool_diameter = float(input("Enter the spool_diameter: "))
-                    self.pulses_per_inch = self.pulses_per_revolution / (np.pi * self.spool_diameter)
+                    self.pulses_per_cm = self.pulses_per_revolution / (np.pi * self.spool_diameter)
 
                 case "pulses_per_revolution":
                     print(f"Current pulses_per_revolution: {self.pulses_per_revolution}")
 
                     self.pulses_per_revolution = float(input("Enter the pulses_per_revolution: "))
-                    self.pulses_per_inch = self.pulses_per_revolution / (np.pi * self.spool_diameter)
+                    self.pulses_per_cm = self.pulses_per_revolution / (np.pi * self.spool_diameter)
 
-                case "pulses_per_inch":
-                    print(f"Current pulses_per_inch: {self.pulses_per_inch}")
-                    self.pulses_per_inch = self.pulses_per_revolution / (np.pi * self.spool_diameter)
-                    print(f"Updated pulses_per_inch: {self.pulses_per_inch}")
+                case "pulses_per_cm":
+                    print(f"Current pulses_per_cm: {self.pulses_per_cm}")
+                    self.pulses_per_cm = self.pulses_per_revolution / (np.pi * self.spool_diameter)
+                    print(f"Updated pulses_per_cm: {self.pulses_per_cm}")
 
                 case "position":
                     print(f"Current position: {self.position}")
@@ -110,32 +116,42 @@ class Motor:
         return self
 
     def send(self, message):
-        self.socket.sendto(bytes(str(message), "utf-8"), self.ip_address)
+        socket = skt.socket(skt.AF_INET, skt.SOCK_DGRAM)
+        socket.settimeout(1)
+
+        socket.sendto(bytes(str(message), "utf-8"), self.ip_address)
         print(
-            f"[{datetime.now()}] Sent: {message}  to:  {str(self.ip_address[0])}", file=self.log)
+            f"[{datetime.now()}] Sent: {message}  to:  {str(self.ip_address[0])}", file=open("log.txt", "a+"))
 
         return message
 
-    def recieve(self):
+    def recieve(self, type = float):
+        socket = skt.socket(skt.AF_INET, skt.SOCK_DGRAM)
+        socket.settimeout(1) 
+
         try:
-            count, _ = self.socket.recvfrom(2048)
-            count = count.decode("utf-8")
+            message = socket.recv(2048)
+            message = message.decode("utf-8")
 
         except:
             print(
-                f"[{datetime.now()}] Timeout of {self.ip_address[0]}", file=self.log)
+                f"[{datetime.now()}] Timeout of {self.ip_address[0]}", file=open("log.txt", "a+"))
 
             return 0
 
-        print(
-            f"[{datetime.now()}] Recieved: {count} from: {self.ip_address[0]}", file=self.log)
+        if type == str:
+            return message
 
-        return float(count) / self.pulses_per_inch
+        print(
+            f"[{datetime.now()}] Recieved: {message} from: {self.ip_address[0]}", file=open("log.txt", "a+"))
+
+        
+        return float(message) / self.pulses_per_cm
 
     def send_target(self, position):
         self.target = norm(self.position - position)
 
-        return self.send(str(self.target) * self.pulses_per_inch)
+        return self.send(str(self.target) * self.pulses_per_cm)
 
     def get_length(self):
         self.send("P")
@@ -152,16 +168,19 @@ class Motor:
     def stop(self):
         self.send("S")
         self.length = self.recieve()
+        self.target = self.length
 
-        return self.L
+        return self.length
 
-    def toggle_endoder_dir(self):
-        self.send("DE")
+    def toggle_motor(self):
+        self.motor_direction = -self.motor_direction
+        self.send("DM" + str(self.motor_direction))
 
         return self.recieve()
 
-    def toggle_encoder_dir(self):
-        self.send("DM")
+    def toggle_encoder(self):
+        self.encoder_direction = -self.encoder_direction
+        self.send("DE" + str(self.encoder_direction))
 
         return self.recieve()
 
@@ -171,7 +190,61 @@ class Motor:
 
         return error
 
+    def sync(self):
+        if self.recieve(str) == "sync":
+            self.send(self.length * self.pulses_per_cm)
+
+            self.send(self.motor_direction)
+            self.send(self.encoder_direction)
+
+            self.send(self.kP)
+            self.send(self.kI)
+            self.send(self.kD)
+
+    def pid_tuning(self):
+        self.sync()
+        
+        menu = {0: "Exit",
+                1: "stop",
+                2: "kP",
+                3: "kI",
+                4: "kD"}
+
+        while True:
+
+            for key in sorted(menu.keys()):
+                print(f"{key}: {menu[key]}")
+
+            while (selection := int(input("Make a selection: "))) not in menu.keys():
+                print("Invalid selection!")
+            
+            match menu[selection]:
+                case "Exit":
+                    break
+
+                case "stop":
+                    self.stop()
+                    pass
+
+                case "kP":
+                    self.kP = float(input("Enter kP: "))
+                    self.send("kP" + str(self.kP))
+
+                case "kI":
+                    self.kI= float(input("Enter kI: "))
+                    self.send("kI" + str(self.kI))
+
+                case "kD":
+                    self.kD = float(input("Enter kD: "))
+                    self.send("kD" + str(self.kD))
+
+            self.target += 10
+            print(f"Target: {self.target} {self.target * self.pulses_per_cm}")
+            self.send(str(self.target * self.pulses_per_cm))
+
     def operate(self):
+        self.sync()
+
         method_list = [method for method in dir(
             Motor) if method.startswith('__') is False]
 
@@ -201,6 +274,12 @@ class Motor:
                     print(f"Current length: {self.length} cm")
                     print(f"Current error: {self.compute_error()*10} mm")
 
+                case "pid_tuning":
+                    self.pid_tuning()
+
+                case "sync":
+                    self.sync()
+
                 case "move (absolute)":
                     while True:
                         try:
@@ -213,8 +292,8 @@ class Motor:
                             break
 
                     self.target = user_input
-                    print(f"Target: {self.target * self.pulses_per_inch}")
-                    self.send(str(self.target * self.pulses_per_inch))
+                    print(f"Target: {self.target * self.pulses_per_cm}")
+                    self.send(str(self.target * self.pulses_per_cm))
 
                 case "move (relative)":
                     while True:
@@ -228,8 +307,8 @@ class Motor:
                             break
 
                     self.target += user_input
-                    print(f"Target: {self.target * self.pulses_per_inch}")
-                    self.send(str(self.target * self.pulses_per_inch))
+                    print(f"Target: {self.target * self.pulses_per_cm}")
+                    self.send(str(self.target * self.pulses_per_cm))
 
                 case "get_length":
                     self.get_length()
@@ -253,15 +332,12 @@ class Motor:
 
 class Mic:
 
-    def __init__(self, id=0, name="blank", motors=[]):
+    def __init__(self, id=0, name="blank"):
+
         self.id = id
         self.name = name
-        self.motors = motors
-
-        if not motors:
-            self.position = np.array([0, 0, 0])
-        else:
-            self.position = self.motors[0].get_mic_position()
+        self.motors = [Motor()]
+        self.position = np.array([0, 0, 0])
 
     def __str__(self):
         string = f"{self.name} mic: (id: {self.id}, postition = {(self.position)}, motors: {len(self.motors)})"
@@ -283,7 +359,8 @@ class Mic:
         for step in np.arange(0, norm(distance)) / norm(distance):
             for motor in self.motors:
                 motor.send_target(start + step * distance)
-                sleep(.2)
+
+            sleep(.2)
 
         self.position = stop
 
@@ -291,7 +368,7 @@ class Mic:
         menu = {0: "Exit",
                 1: "Add a motor",
                 2: "Delete a motor"}
-        menu.update({list(menu.keys())[-1] + index: name.capitalize()
+        menu.update({list(menu.keys())[-1] + index: name
                      for index, name in enumerate(vars(self).keys(), 1) if name not in []})
 
         while True:
@@ -303,22 +380,18 @@ class Mic:
 
             match menu[selection]:
                 case "Exit":
-                    if not self.motors:
-                        print("Mic needs at least one motor!")
-
-                    else:
-                        break
+                    break
 
                 case "Add a motor":
                     self.motors.append(Motor().edit())
 
-                case "Id":
+                case "id":
                     self.id = input("Enter the new id: ")
 
-                case "Name":
+                case "name":
                     self.name = input("Enter the new name: ")
 
-                case "Position":
+                case "position":
                     self.position = position_input()
 
         return self
@@ -381,7 +454,7 @@ class Mic:
                     self.move(position)
 
 
-def edit_mics():
+def edit_mics(socket):
     menu = {"0": "Exit",
             "1": "Add a mic",
             "2": "Remove a mic"}
@@ -399,7 +472,7 @@ def edit_mics():
                 break
 
             case "Add a mic":
-                mics.append(Mic().edit())
+                mics.append(Mic(socket).edit())
 
             case "Remove a mic":
                 pass
@@ -445,8 +518,9 @@ def remove_set():
 
         del sets[menu[selection]]
 
-
 if __name__ == "__main__":
+    
+    log = open("log.txt", "a+")
     # setup
     try:
         mics, sets = pk.load(open("config.pkl", "rb"))
@@ -454,7 +528,7 @@ if __name__ == "__main__":
     except:
         sets = {}
         num_mics = int(input("Enter the number of mics: "))
-        mics = [Mic(index).edit() for index in range(num_mics)]
+        mics = [Mic(id=index).edit() for index in range(num_mics)]
 
     print(mics)
 
