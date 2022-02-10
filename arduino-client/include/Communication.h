@@ -6,8 +6,6 @@
 #include <Ethernet.h>
 #include <EthernetUdp.h>
 
-#define PORT 5000
-
 EthernetUDP Udp;
 
 void ethernet(int board)
@@ -17,21 +15,23 @@ void ethernet(int board)
 
     Ethernet.begin(MAC, IP);
 
-    // while (1)
-    // {
-    //     if (!Ethernet.hardwareStatus())
-    //     {
-    //         Serial.println("Ethernet shield was not found.");
-    //     }
-    //     else if (Ethernet.linkStatus() == LinkOFF)
-    //     {
-    //         Serial.println("Ethernet cable is not connected.");
-    //         continue;
-    //     }
-    //     break;
-    // }
+    while (1)
+    {
+        if (!Ethernet.hardwareStatus())
+        {
+            Serial.println("Ethernet shield was not found.");
+        }
+        else if (Ethernet.linkStatus() == LinkOFF)
+        {
+            Serial.println("Ethernet cable is not connected.");
+            continue;
+        }
+        break;
 
-    Udp.begin(PORT);
+        delay(1000);
+    }
+
+    Udp.begin(5000);
 
     Serial.println(IP);
 
@@ -49,9 +49,9 @@ String in()
 
 void out(String msg)
 {
-  char buff[16];
+  char buff[UDP_TX_PACKET_MAX_SIZE];
 
-  msg.toCharArray(buff, 16);
+  msg.toCharArray(buff, UDP_TX_PACKET_MAX_SIZE);
 
   Udp.beginPacket(Udp.remoteIP(), Udp.remotePort());
   Udp.write(buff);

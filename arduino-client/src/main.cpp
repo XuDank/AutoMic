@@ -1,17 +1,22 @@
 #include <Hardware.h>
 #include <Communication.h>
 
-#define BOARD_NUM 3
+const int BOARD_NUM = 2;
+
+void sync();
 
 void setup()
 {
+  Serial.println("Setup...");
+
   Serial.begin(9600);
 
   ethernet(BOARD_NUM);
   motor();
   encoder(interrupt);
+  sync();
 
-  Serial.println("Done with setup");
+  Serial.println("Done!");
 }
 
 void loop()
@@ -20,61 +25,105 @@ void loop()
   {
     String com = in(); // recieve a comand from the server
 
-    if (isDigit(com[0]))
+    if (isDigit(com[0]) || com[0] == '-')
     {
       tar = com.toDouble();
-      Serial.println("Target: " + String(tar));
       setPWM();
+    }
+
+    else if (com = "sync")
+    {
+      sync();
+    }
+    
+    else if (com == "P")
+    {
+      out(String(count));
+    }
+
+    else if (com == "S")
+    {
+      tar = count;
+      out(String(count));
+    }
+
+    else if (com[0] == 'E')
+    {
+      count = com.substring(1).toDouble();
+      tar = count;
+      out(String(count));
+    }
+
+    else if (com[0] == 'k')
+    {
+      if (com[1] == 'P')
+      {
+        kP = com.substring(2).toDouble();
+      }
+
+      else if (com[1] == 'P')
+      {
+        kI = com.substring(2).toDouble();
+      }
+
+      else if (com[1] == 'P')
+      {
+        kD = com.substring(2).toDouble();
+      }
+
+      myPID.SetTunings(kP, kI, kD);
+
+      Serial.println("kP = " + String(kP) + ", kI = " + String(kI) + " & kD = " + String(kD));
+    }
+    
+    else if (com.substring(0,1) == "DE")
+    {
+      edir = com.substring(2).toDouble();
+      out(String(edir));
+    }
+
+    else if (com.substring(0,1) == "DM")
+    {
+      mdir = com.substring(2).toDouble();
+      out(String(mdir));
     }
 
     else
     {
-      switch (com[0])
-      {
-      case 'P':
-        out(String(count));
-        break;
-
-      case 'E':
-        com.remove(0);
-        count = com.toDouble();
-        tar = count;
-        out(String(count));
-        break;
-
-      case 'S':
-        tar = count;
-        out(String(count));
-        break;
-
-      case 'D':
-        if (com[1] == 'E')
-        {
-          edir = edir * -1;
-          out(String(edir));
-          break;
-        }
-
-        else if (com[1] == 'M')
-        {
-          mdir = mdir * -1;
-          out(String(mdir));
-          break;
-        }
-
-      default:
-        Serial.println("Invalid command!");
-        break;
-      }
+      Serial.println("Invalid command!");
     }
   }
 
-  while(pwm != 0.0){
-    setPWM();
+  setPWM();
+}
 
-    Serial.println("Target: " + String(tar));
-    Serial.println("Count: " + String(count));
-    Serial.println("PWM: " + String(pwm));
-    delay(250);
+void sync()
+{
+  while(true) 
+  {
+    out("sync");
+
+    if (Udp.parsePacket())
+    {
+      String com = in();
+
+      if (com == "sync")
+      {
+        break;
+      }
+    }
+
+    delay(500);
   }
+
+  count = in().toDouble(); while (!Udp.parsePacket());
+  tar = count; 
+
+  mdir = in().toDouble(); while (!Udp.parsePacket());
+  edir = in().toDouble(); while (!Udp.parsePacket());
+
+  kP = in().toDouble(); while (!Udp.parsePacket());
+  kI = in().toDouble(); while (!Udp.parsePacket());
+  kD = in().toDouble(); while (!Udp.parsePacket());
+  
 }
