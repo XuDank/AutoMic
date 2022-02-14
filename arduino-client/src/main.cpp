@@ -1,22 +1,24 @@
 #include <Hardware.h>
 #include <Communication.h>
 
-const int BOARD_NUM = 2;
+const int BOARD_NUM = 3;
 
-void sync();
+void sync(bool = true);
+void read(String );
 
 void setup()
 {
+  Serial.begin(9600);
   Serial.println("Setup...");
 
-  Serial.begin(9600);
+  setupEthernet(BOARD_NUM);
+  setupMotor();
+  setupEncoder(readEncoder);
 
-  ethernet(BOARD_NUM);
-  motor();
-  encoder(interrupt);
   sync();
 
-  Serial.println("Done!");
+  Serial.println("Setup complete!");
+  Serial.println("Entering the loop");
 }
 
 void loop()
@@ -28,102 +30,96 @@ void loop()
     if (isDigit(com[0]) || com[0] == '-')
     {
       tar = com.toDouble();
-      setPWM();
     }
 
-    else if (com = "sync")
-    {
-      sync();
-    }
-    
-    else if (com == "P")
-    {
-      out(String(count));
-    }
-
-    else if (com == "S")
-    {
-      tar = count;
-      out(String(count));
-    }
-
-    else if (com[0] == 'E')
-    {
-      count = com.substring(1).toDouble();
-      tar = count;
-      out(String(count));
-    }
-
-    else if (com[0] == 'k')
-    {
-      if (com[1] == 'P')
-      {
-        kP = com.substring(2).toDouble();
-      }
-
-      else if (com[1] == 'P')
-      {
-        kI = com.substring(2).toDouble();
-      }
-
-      else if (com[1] == 'P')
-      {
-        kD = com.substring(2).toDouble();
-      }
-
-      myPID.SetTunings(kP, kI, kD);
-
-      Serial.println("kP = " + String(kP) + ", kI = " + String(kI) + " & kD = " + String(kD));
-    }
-    
-    else if (com.substring(0,1) == "DE")
-    {
-      edir = com.substring(2).toDouble();
-      out(String(edir));
-    }
-
-    else if (com.substring(0,1) == "DM")
-    {
-      mdir = com.substring(2).toDouble();
-      out(String(mdir));
-    }
-
-    else
-    {
-      Serial.println("Invalid command!");
-    }
+    else read(com);
   }
 
   setPWM();
 }
 
-void sync()
+void sync(bool wait)
 {
-  while(true) 
+  while (wait)
   {
-    out("sync");
+    while (!Udp.parsePacket());
 
-    if (Udp.parsePacket())
-    {
-      String com = in();
-
-      if (com == "sync")
-      {
-        break;
-      }
-    }
-
-    delay(500);
+    String com = in();
+    if (com == "sync") break;
   }
 
-  count = in().toDouble(); while (!Udp.parsePacket());
-  tar = count; 
+  while(true)
+  {
+    while (!Udp.parsePacket());
 
-  mdir = in().toDouble(); while (!Udp.parsePacket());
-  edir = in().toDouble(); while (!Udp.parsePacket());
+    String com = in();
+    if (com == "done")
+    {
+      out("synced");
+      break;
+    } 
 
-  kP = in().toDouble(); while (!Udp.parsePacket());
-  kI = in().toDouble(); while (!Udp.parsePacket());
-  kD = in().toDouble(); while (!Udp.parsePacket());
-  
+    read(com);
+  }
+}
+
+void read(String com)
+{
+  Serial.println("Reading...");
+  if (com == "sync") sync(false);
+
+  else if (com == "P")
+  {
+    out(String(count));
+  }
+
+  else if (com == "S")
+  {
+    pwm = 0;
+    tar = count;
+  }
+
+  else if (com[0] == 'E')
+  {
+    count = com.substring(1).toDouble();
+    tar = count;
+  }
+
+  else if (com[0] == 'k')
+  {
+    if (com[1] == 'P')
+    {
+      kP = com.substring(2).toDouble();
+    }
+
+    else if (com[1] == 'I')
+    {
+      kI = com.substring(2).toDouble();
+    }
+
+    else if (com[1] == 'D')
+    {
+      kD = com.substring(2).toDouble();
+    }
+
+    myPID.SetTunings(kP, kI, kD);
+
+    Serial.println("kP = " + String(kP) + ", kI = " + String(kI) + " & kD = " + String(kD));
+  }
+
+
+  else if (com.substring(0,2) == "DE")
+  {
+    edir = com.substring(2).toDouble();
+  }
+
+  else if (com.substring(0,2) == "DM")
+  {
+    mdir = com.substring(2).toDouble();
+  }
+
+  else
+  {
+    Serial.println("Invalid command!");
+  }
 }
