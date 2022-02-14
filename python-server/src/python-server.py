@@ -29,24 +29,27 @@ def position_input():
 
 class Motor:
 
-    def __init__(self):
+    def __init__(self, pulses_per_revolution = 150.0 * 11.0, spool_diameter = 5, id = 0, ip_adress = "192.168.1.2", position = np.array([0, 0, 0]), length = 0.0, motor_direction = 1, encoder_direction = 1, kP = 1.0, kI = 0.0, kD = 0.0):
 
-        self.pulses_per_revolution = 150.0 * 11.0
-        self.spool_diameter = 5
+        self.socket = skt.socket(skt.AF_INET, skt.SOCK_DGRAM)
+        self.socket.settimeout(1)
+
+        self.pulses_per_revolution = pulses_per_revolution
+        self.spool_diameter = spool_diameter
         self.pulses_per_cm = self.pulses_per_revolution / (np.pi * self.spool_diameter)
 
-        self.id = 0
-        self.ip_address = ("192.168.1.2", 5000)
-        self.position = np.array([0, 0, 0])
-        self.length = 0.0
+        self.id = id
+        self.ip_address = (ip_adress, 5000)
+        self.position = position
+        self.length = length
         self.target = self.length
 
-        self.motor_direction = 1
-        self.encoder_direction = 1
+        self.motor_direction = motor_direction
+        self.encoder_direction = encoder_direction
 
-        self.kP = 0.0
-        self.kI = 0.0
-        self.kD = 0.0
+        self.kP = kP
+        self.kI = kI
+        self.kD = kD
 
     def __str__(self):
         return f"Motor {self.id} (ip = {self.ip_address[0]}, position = {np.array2string(self.position)} cm, length = {self.length} cm)"
@@ -116,21 +119,17 @@ class Motor:
         return self
 
     def send(self, message):
-        socket = skt.socket(skt.AF_INET, skt.SOCK_DGRAM)
-        socket.settimeout(1)
+        
 
-        socket.sendto(bytes(str(message), "utf-8"), self.ip_address)
+        self.socket.sendto(bytes(str(message), "utf-8"), self.ip_address)
         print(
             f"[{datetime.now()}] Sent: {message}  to:  {str(self.ip_address[0])}", file=open("log.txt", "a+"))
 
         return message
 
     def recieve(self, type = float):
-        socket = skt.socket(skt.AF_INET, skt.SOCK_DGRAM)
-        socket.settimeout(1) 
-
         try:
-            message = socket.recv(2048)
+            message = self.socket.recv(2048)
             message = message.decode("utf-8")
 
         except:
@@ -146,64 +145,61 @@ class Motor:
             f"[{datetime.now()}] Recieved: {message} from: {self.ip_address[0]}", file=open("log.txt", "a+"))
 
         
-        return float(message) / self.pulses_per_cm
+        return float(message)
 
     def send_target(self, position):
         self.target = norm(self.position - position)
-
-        return self.send(str(self.target) * self.pulses_per_cm)
+        self.send(self.target * self.pulses_per_cm)
 
     def get_length(self):
         self.send("P")
         self.length = self.recieve()
 
-        return self.length
-
     def set_length(self, length):
         self.send("E" + str(length))
-        self.length = self.recieve()
-
-        return self.length
+        self.length = length
 
     def stop(self):
         self.send("S")
-        self.length = self.recieve()
         self.target = self.length
-
-        return self.length
 
     def toggle_motor(self):
         self.motor_direction = -self.motor_direction
         self.send("DM" + str(self.motor_direction))
 
-        return self.recieve()
 
     def toggle_encoder(self):
         self.encoder_direction = -self.encoder_direction
         self.send("DE" + str(self.encoder_direction))
 
-        return self.recieve()
 
     def compute_error(self):
         self.get_length()
         error = (self.target - self.length)
 
+        print(f"The current error is {error} cm")
+
         return error
 
     def sync(self):
-        if self.recieve(str) == "sync":
-            self.send(self.length * self.pulses_per_cm)
+        self.send("sync")
 
-            self.send(self.motor_direction)
-            self.send(self.encoder_direction)
+        self.send(f"E{self.length * self.pulses_per_cm}")
 
-            self.send(self.kP)
-            self.send(self.kI)
-            self.send(self.kD)
+        self.send(f"DM{self.motor_direction}")
+        self.send(f"DE{self.encoder_direction}")
+
+        self.send(f"kP{self.kP}")
+        self.send(f"kI{self.kI}")
+        self.send(f"kD{self.kD}")
+
+        self.send("done")
+
+        return self.recieve(type= str) == "synced"
 
     def pid_tuning(self):
         self.sync()
-        
+
         menu = {0: "Exit",
                 1: "stop",
                 2: "kP",
@@ -269,16 +265,16 @@ class Motor:
                     self.edit()
 
                 case "compute_error":
-                    print(f"Current target: {self.target} cm")
-                    self.get_length()
-                    print(f"Current length: {self.length} cm")
-                    print(f"Current error: {self.compute_error()*10} mm")
+                    self.compute_error()
 
                 case "pid_tuning":
                     self.pid_tuning()
 
                 case "sync":
                     self.sync()
+
+                case "stop":
+                    self.stop()
 
                 case "move (absolute)":
                     while True:
@@ -294,6 +290,9 @@ class Motor:
                     self.target = user_input
                     print(f"Target: {self.target * self.pulses_per_cm}")
                     self.send(str(self.target * self.pulses_per_cm))
+
+                case "recieve":
+                    print(f"Got: {self.recieve(str)}")
 
                 case "move (relative)":
                     while True:
@@ -329,15 +328,20 @@ class Motor:
                     self.set_length(user_input)
                     print(f"Current length: {self.length}")
 
+                case "toggle_encoder":
+                    self.toggle_encoder()
+
+                case "toggle_motor":
+                    self.toggle_motor()
 
 class Mic:
 
-    def __init__(self, id=0, name="blank"):
+    def __init__(self, id=0, name="blank", motors=[Motor()], position=np.array([0, 0, 0])):
 
         self.id = id
         self.name = name
-        self.motors = [Motor()]
-        self.position = np.array([0, 0, 0])
+        self.motors = motors
+        self.position = position
 
     def __str__(self):
         string = f"{self.name} mic: (id: {self.id}, postition = {(self.position)}, motors: {len(self.motors)})"
@@ -360,7 +364,7 @@ class Mic:
             for motor in self.motors:
                 motor.send_target(start + step * distance)
 
-            sleep(.2)
+            sleep(.1)
 
         self.position = stop
 
@@ -396,6 +400,14 @@ class Mic:
 
         return self
 
+    def sync(self):
+        status = []
+
+        for motor in self.motors:
+            status.append(motor.sync())
+
+        return status
+
     def move(self, position):
         self.set_postion(self.position + position)
 
@@ -405,6 +417,7 @@ class Mic:
             motor.operate()
 
     def operate(self):
+        self.sync()
         while True:
             menu = {0: "Exit",
                     1: "Calibrate",
@@ -454,13 +467,13 @@ class Mic:
                     self.move(position)
 
 
-def edit_mics(socket):
+def edit_mics():
     menu = {"0": "Exit",
             "1": "Add a mic",
             "2": "Remove a mic"}
 
     while True:
-        print(*mics)
+        print(mics)
         for key in sorted(menu.keys()):
             print(f"{key}: {menu[key]}")
 
@@ -520,7 +533,6 @@ def remove_set():
 
 if __name__ == "__main__":
     
-    log = open("log.txt", "a+")
     # setup
     try:
         mics, sets = pk.load(open("config.pkl", "rb"))
@@ -530,11 +542,13 @@ if __name__ == "__main__":
         num_mics = int(input("Enter the number of mics: "))
         mics = [Mic(id=index).edit() for index in range(num_mics)]
 
-    print(mics)
+    # print(mics)
 
-    # main
-    try:
-        mics[0].operate()
+    # # main
+    # try:
+    #     mics[0].operate()
 
-    finally:
-        pk.dump((mics, sets), open("config.pkl", "wb"))
+    # finally:
+    #     pk.dump((mics, sets), open("config.pkl", "wb"))
+
+    Mic(motors = [Motor(id=num, ip_adress=f"192.168.1.{2 + num}", encoder_direction=-1) for num in range(2)]).operate()
