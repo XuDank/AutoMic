@@ -153,10 +153,10 @@ class Motor:
 
     def get_length(self):
         self.send("P")
-        self.length = self.recieve()
+        self.length = self.recieve() / self.pulses_per_cm
 
     def set_length(self, length):
-        self.send("E" + str(length))
+        self.send("E" + str(length * self.pulses_per_cm))
         self.length = length
 
     def stop(self):
@@ -354,15 +354,17 @@ class Mic:
     def __repr__(self):
         return f"{self.name} mic: (id: {self.id}, postition = {(self.position)}, motors: {len(self.motors)})"
 
-    def set_postion(self, position):
+    def move(self, position):
+        for motor in self.motors:
+            motor.send_target(position)
+
+    def step_move(self, position):
         start = self.position
         stop = position
         distance = stop - start
 
-
         for step in np.arange(0, norm(distance)) / norm(distance):
-            for motor in self.motors:
-                motor.send_target(start + step * distance)
+            self.move(start + step * distance)
 
             sleep(.1)
 
@@ -408,9 +410,6 @@ class Mic:
 
         return status
 
-    def move(self, position):
-        self.set_postion(self.position + position)
-
     def calibrate(self):
         for motor in self.motors:
             print(motor)
@@ -420,11 +419,12 @@ class Mic:
         self.sync()
         while True:
             menu = {0: "Exit",
-                    1: "Calibrate",
-                    2: "Home",
-                    3: "Move",
-                    4: "Edit",
-                    5: "Select a motor"}
+                    1: "calibrate",
+                    2: "home",
+                    3: "move (absolute)",
+                    4: "move (relative)",
+                    5: "edit",
+                    6: "select a motor"}
                     
             for key in sorted(menu.keys()):
                 print(f"{key}: {menu[key]}")
@@ -436,13 +436,13 @@ class Mic:
                 case "Exit":
                     break
 
-                case "Calibrate":
+                case "calibrate":
                     self.calibrate()
 
-                case "Edit":
+                case "edit":
                     self.edit()
 
-                case "Select a motor":
+                case "select a motor":
                     while True:
                         menu = {0: "Exit"}
                         menu.update({index: motor for index, motor in enumerate(self.motors, 1)})
@@ -458,13 +458,16 @@ class Mic:
 
                         menu[selection].operate()
 
-                case "Home":
-                    position = position_input()
-                    self.set_postion(position)
+                case "home":
+                    self.move(np.array([0, 0, 0]))
 
-                case "Move":
-                    position = position_input()
-                    self.move(position)
+                case "move (absolute)":
+                    self.position = position_input()
+                    self.move(self.position)
+
+                case "move (relative)":
+                    self.position += position_input()
+                    self.move(self.position)
 
 
 def edit_mics():
@@ -485,7 +488,7 @@ def edit_mics():
                 break
 
             case "Add a mic":
-                mics.append(Mic(socket).edit())
+                mics.append(Mic().edit())
 
             case "Remove a mic":
                 pass
@@ -550,5 +553,7 @@ if __name__ == "__main__":
 
     # finally:
     #     pk.dump((mics, sets), open("config.pkl", "wb"))
+    mymotors = [Motor(id = 2, motor_direction= -1, spool_diameter=5.9),
+                Motor(id = 3, ip_adress= "192.168.1.3", encoder_direction= -1, spool_diameter=5.9)]
 
-    Mic(motors = [Motor(id=num, ip_adress=f"192.168.1.{2 + num}", encoder_direction=-1) for num in range(2)]).operate()
+    Mic(motors=  mymotors).operate()
