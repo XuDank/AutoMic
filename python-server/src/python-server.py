@@ -1,4 +1,5 @@
 from time import sleep
+from click import edit
 import numpy as np
 import pickle as pk
 import socket as skt
@@ -13,15 +14,14 @@ def position_input():
             user_input = [float(coordinate) for coordinate in input(
                 "Enter the coordinates: ").split()]
 
-            match len(user_input):
-                case 1:
-                    return np.array([0, 0] + user_input)
+            if len(user_input) == 1:
+                return np.array([0, 0] + user_input)
 
-                case 2:
-                    return np.array(user_input + [0])
+            elif len(user_input) == 2:
+                return np.array(user_input + [0])
 
-                case 3:
-                    return np.array(user_input)
+            elif len(user_input) == 3:
+                return np.array(user_input)
 
         except:
             print("Invalid input!")
@@ -30,10 +30,6 @@ def position_input():
 class Motor:
 
     def __init__(self, pulses_per_revolution = 150.0 * 11.0, spool_diameter = 5, id = 0, ip_adress = "192.168.1.2", position = np.array([0, 0, 0]), length = 0.0, motor_direction = 1, encoder_direction = 1, kP = 1.0, kI = 0.0, kD = 0.0):
-
-        self.socket = skt.socket(skt.AF_INET, skt.SOCK_DGRAM)
-        self.socket.settimeout(1)
-
         self.pulses_per_revolution = pulses_per_revolution
         self.spool_diameter = spool_diameter
         self.pulses_per_cm = self.pulses_per_revolution / (np.pi * self.spool_diameter)
@@ -43,6 +39,7 @@ class Motor:
         self.position = position
         self.length = length
         self.target = self.length
+        self.status = False
 
         self.motor_direction = motor_direction
         self.encoder_direction = encoder_direction
@@ -57,6 +54,16 @@ class Motor:
     def __repr__(self):
         return str(self)
 
+    def __getstate__(self):
+        self.__dict__.pop('socket')
+        return self.__dict__
+
+    def __setstate__(self, state):
+        self.__dict__ = state
+        self.status = False
+        self.socket = skt.socket(skt.AF_INET, skt.SOCK_DGRAM)
+        self.socket.settimeout(1)
+
     def edit(self):
         menu = {0: "Exit"}
         menu.update({list(menu.keys())[-1] + index: name
@@ -69,83 +76,81 @@ class Motor:
             while (selection := int(input("Make a selection: "))) not in menu.keys():
                 print("Invalid selection!")
 
-            match menu[selection]:
-                case "Exit":
-                    break
+            if menu[selection] == "Exit":
+                break
 
-                case "id":
-                    print(f"Current id: {self.id}")
-                    self.id = int(input("Enter the ID: "))
+            elif menu[selection] ==  "id":
+                print(f"Current id: {self.id}")
+                self.id = int(input("Enter the ID: "))
 
-                case "ip_address":
-                    print(f"Current ip address: {self.ip_address}")
+            elif menu[selection] ==  "ip_address":
+                print(f"Current ip address: {self.ip_address}")
 
-                    while True:
-                        try:
-                            self.ip_address = (
-                                str(adr(input("Enter the ip address: "))), 5000)
-                        except:
-                            print("Invalid ip address!")
-                        else:
-                            break
+                while True:
+                    try:
+                        self.ip_address = (
+                            str(adr(input("Enter the ip address: "))), 5000)
+                    except:
+                        print("Invalid ip address!")
+                    else:
+                        break
 
-                case "spool_diameter":
-                    print(f"Current spool_diameter: {self.spool_diameter}")
+            elif menu[selection] ==  "spool_diameter":
+                print(f"Current spool_diameter: {self.spool_diameter}")
 
-                    self.spool_diameter = float(input("Enter the spool_diameter: "))
-                    self.pulses_per_cm = self.pulses_per_revolution / (np.pi * self.spool_diameter)
+                self.spool_diameter = float(input("Enter the spool_diameter: "))
+                self.pulses_per_cm = self.pulses_per_revolution / (np.pi * self.spool_diameter)
 
-                case "pulses_per_revolution":
-                    print(f"Current pulses_per_revolution: {self.pulses_per_revolution}")
+            elif menu[selection] ==  "pulses_per_revolution":
+                print(f"Current pulses_per_revolution: {self.pulses_per_revolution}")
 
-                    self.pulses_per_revolution = float(input("Enter the pulses_per_revolution: "))
-                    self.pulses_per_cm = self.pulses_per_revolution / (np.pi * self.spool_diameter)
+                self.pulses_per_revolution = float(input("Enter the pulses_per_revolution: "))
+                self.pulses_per_cm = self.pulses_per_revolution / (np.pi * self.spool_diameter)
 
-                case "pulses_per_cm":
-                    print(f"Current pulses_per_cm: {self.pulses_per_cm}")
-                    self.pulses_per_cm = self.pulses_per_revolution / (np.pi * self.spool_diameter)
-                    print(f"Updated pulses_per_cm: {self.pulses_per_cm}")
+            elif menu[selection] ==  "pulses_per_cm":
+                print(f"Current pulses_per_cm: {self.pulses_per_cm}")
+                self.pulses_per_cm = self.pulses_per_revolution / (np.pi * self.spool_diameter)
+                print(f"Updated pulses_per_cm: {self.pulses_per_cm}")
 
-                case "position":
-                    print(f"Current position: {self.position}")
+            elif menu[selection] ==  "position":
+                print(f"Current position: {self.position}")
 
-                    self.position = position_input()
+                self.position = position_input()
 
-                case "length":
-                    print(f"Current length: {self.length}")
+            elif menu[selection] ==  "length":
+                print(f"Current length: {self.length}")
 
-                    self.length = float(input("Enter the length: "))
+                self.length = float(input("Enter the length: "))
 
         return self
 
     def send(self, message):
-        
-
         self.socket.sendto(bytes(str(message), "utf-8"), self.ip_address)
         print(
-            f"[{datetime.now()}] Sent: {message}  to:  {str(self.ip_address[0])}", file=open("log.txt", "a+"))
+            f"[{datetime.now()}] Sent: {message}  to:  {str(self.ip_address[0])}")#, file=open("log.txt", "a+"))
 
         return message
 
-    def recieve(self, type = float):
+    def recieve(self):
         try:
             message = self.socket.recv(2048)
             message = message.decode("utf-8")
 
+            print(
+                 f"[{datetime.now()}] Recieved: {message} from: {self.ip_address[0]}")#, file=open("log.txt", "a+"))
+
         except:
             print(
-                f"[{datetime.now()}] Timeout of {self.ip_address[0]}", file=open("log.txt", "a+"))
+                f"[{datetime.now()}] Timeout of {self.ip_address[0]}")#, file=open("log.txt", "a+"))
+            self.status = not self.status
 
-            return 0
+            return None
 
-        if type == str:
-            return message
-
-        print(
-            f"[{datetime.now()}] Recieved: {message} from: {self.ip_address[0]}", file=open("log.txt", "a+"))
-
+        try:    
+            return float(message)
         
-        return float(message)
+        except:
+            return message
 
     def send_target(self, position):
         self.target = norm(self.position - position)
@@ -172,7 +177,6 @@ class Motor:
         self.encoder_direction = -self.encoder_direction
         self.send("DE" + str(self.encoder_direction))
 
-
     def compute_error(self):
         self.get_length()
         error = (self.target - self.length)
@@ -183,7 +187,7 @@ class Motor:
 
     def sync(self):
         self.send("sync")
-
+        print(f"{self.length}, {self.pulses_per_cm}")
         self.send(f"E{self.length * self.pulses_per_cm}")
 
         self.send(f"DM{self.motor_direction}")
@@ -195,7 +199,13 @@ class Motor:
 
         self.send("done")
 
-        return self.recieve(type= str) == "synced"
+        response = self.recieve()
+
+        if response == "synced":
+            self.status = True
+        
+        else:
+            self.status = False
 
     def pid_tuning(self):
         self.sync()
@@ -214,25 +224,28 @@ class Motor:
             while (selection := int(input("Make a selection: "))) not in menu.keys():
                 print("Invalid selection!")
             
-            match menu[selection]:
-                case "Exit":
-                    break
 
-                case "stop":
-                    self.stop()
-                    pass
+            if menu[selection] == "Exit":
+                break
 
-                case "kP":
-                    self.kP = float(input("Enter kP: "))
-                    self.send("kP" + str(self.kP))
+            elif menu[selection] == "stop":
+                self.stop()
+                pass
 
-                case "kI":
-                    self.kI= float(input("Enter kI: "))
-                    self.send("kI" + str(self.kI))
+            elif menu[selection] == "kP":
+                self.kP = float(input("Enter kP: "))
+                self.send("kP" + str(self.kP))
 
-                case "kD":
-                    self.kD = float(input("Enter kD: "))
-                    self.send("kD" + str(self.kD))
+            elif menu[selection] == "kI":
+                self.kI= float(input("Enter kI: "))
+                self.send("kI" + str(self.kI))
+
+            elif menu[selection] == "kD":
+                self.kD = float(input("Enter kD: "))
+                self.send("kD" + str(self.kD))
+
+            else:
+                print("Not implemented lol")
 
             self.target += 10
             print(f"Target: {self.target} {self.target * self.pulses_per_cm}")
@@ -257,87 +270,59 @@ class Motor:
             while (selection := int(input("Make a selection: "))) not in menu.keys():
                 print("Invalid selection!")
 
-            match menu[selection]:
-                case "Exit":
-                    break
+            if menu[selection] == "Exit":
+                break
 
-                case "edit":
-                    self.edit()
+            elif menu[selection] == "edit":
+                self.edit()
 
-                case "compute_error":
-                    self.compute_error()
+            elif menu[selection] == "compute_error":
+                self.compute_error()
 
-                case "pid_tuning":
-                    self.pid_tuning()
+            elif menu[selection] == "pid_tuning":
+                self.pid_tuning()
 
-                case "sync":
-                    self.sync()
+            elif menu[selection] == "sync":
+                self.sync()
 
-                case "stop":
-                    self.stop()
+            elif menu[selection] == "stop":
+                self.stop()
 
-                case "move (absolute)":
-                    while True:
-                        try:
-                            user_input = float(input("Enter the amount: "))
+            elif menu[selection] == "move (absolute)":
+                self.target = norm(position_input())
+                self.send(str(self.target * self.pulses_per_cm))
 
-                        except:
-                            print("Invalid input!")
+                print(f"Target: {self.target * self.pulses_per_cm}")
+                
 
-                        else:
-                            break
+            elif menu[selection] == "recieve":
+                print(f"Got: {self.recieve()}")
 
-                    self.target = user_input
-                    print(f"Target: {self.target * self.pulses_per_cm}")
-                    self.send(str(self.target * self.pulses_per_cm))
+            elif menu[selection] == "move (relative)":
+                self.target += norm(position_input())
+                self.send(str(self.target * self.pulses_per_cm))
+                
+                print(f"Target: {self.target * self.pulses_per_cm}")
 
-                case "recieve":
-                    print(f"Got: {self.recieve(str)}")
+            elif menu[selection] == "get_length":
+                self.get_length()
 
-                case "move (relative)":
-                    while True:
-                        try:
-                            user_input = float(input("Enter the amount: "))
+                print(f"Current length: {self.length}")
 
-                        except:
-                            print("Invalid input!")
+            elif menu[selection] == "set_length":
+                self.set_length(norm(position_input()))
 
-                        else:
-                            break
+                print(f"Current length: {self.length}")
 
-                    self.target += user_input
-                    print(f"Target: {self.target * self.pulses_per_cm}")
-                    self.send(str(self.target * self.pulses_per_cm))
+            elif menu[selection] == "toggle_encoder":
+                self.toggle_encoder()
 
-                case "get_length":
-                    self.get_length()
-                    print(f"Current length: {self.length}")
-
-
-                case "set_length":
-                    while True:
-                        try:
-                            user_input = float(input("Enter the value: "))
-
-                        except:
-                            print("Invalid input!")
-
-                        else:
-                            break
-
-                    self.set_length(user_input)
-                    print(f"Current length: {self.length}")
-
-                case "toggle_encoder":
-                    self.toggle_encoder()
-
-                case "toggle_motor":
-                    self.toggle_motor()
+            elif menu[selection] == "toggle_motor":
+                self.toggle_motor()
 
 class Mic:
 
     def __init__(self, id=0, name="blank", motors=[Motor()], position=np.array([0, 0, 0])):
-
         self.id = id
         self.name = name
         self.motors = motors
@@ -384,21 +369,20 @@ class Mic:
             while (selection := int(input("Make a selection: "))) not in menu.keys():
                 print("Invalid selection!")
 
-            match menu[selection]:
-                case "Exit":
-                    break
+            if menu[selection] == "Exit":
+                break
 
-                case "Add a motor":
-                    self.motors.append(Motor().edit())
+            elif menu[selection] == "Add a motor":
+                self.motors.append(Motor().edit())
 
-                case "id":
-                    self.id = input("Enter the new id: ")
+            elif menu[selection] == "id":
+                self.id = input("Enter the new id: ")
 
-                case "name":
-                    self.name = input("Enter the new name: ")
+            elif menu[selection] == "name":
+                self.name = input("Enter the new name: ")
 
-                case "position":
-                    self.position = position_input()
+            elif menu[selection] == "position":
+                self.position = position_input()
 
         return self
 
@@ -412,8 +396,26 @@ class Mic:
 
     def calibrate(self):
         for motor in self.motors:
-            print(motor)
-            motor.operate()
+            motor.sync()
+            motor.set_length(0)
+            motor.send_target(motor.position + 500)
+
+        while True:
+            menu = {0: "Exit"}
+            menu.update({index: motor for index, motor in enumerate(self.motors, 1)})
+
+            for key in sorted(menu.keys()):
+                print(f"{key}: {menu[key]}")
+
+            while (selection := int(input("Make a selection: "))) not in menu.keys():
+                print("Invalid selection!")
+
+            if menu[selection] == "Exit":
+                break
+
+            menu[selection].operate()
+
+        self.move(np.array([0, 0, 0]))                 
 
     def operate(self):
         self.sync()
@@ -470,6 +472,25 @@ class Mic:
                     self.move(self.position)
 
 
+def select_mic():
+    menu = {0: "Exit"}
+
+    menu.update({list(menu.keys())[-1] + index: mic
+                 for index, mic in enumerate(mics, 1)})
+    
+    while True:
+        for key in sorted(menu.keys()):
+            print(f"{key}: {menu[key]}")
+
+        while (selection := int(input("Make a selection: "))) not in menu.keys():
+            print("Invalid selection!")
+
+        if not selection:
+            break
+
+        menu[selection].operate()
+
+
 def edit_mics():
     menu = {"0": "Exit",
             "1": "Add a mic",
@@ -491,7 +512,20 @@ def edit_mics():
                 mics.append(Mic().edit())
 
             case "Remove a mic":
-                pass
+                menu = {0: "Exit"}
+
+                menu.update({list(menu.keys())[-1] + index: mic
+                            for index, mic in enumerate(mics, 1)})
+                
+                while True:
+                    for key in sorted(menu.keys()):
+                        print(f"{key}: {menu[key]}")
+
+                    while (selection := int(input("Make a selection: "))) not in menu.keys():
+                        print("Invalid selection!")
+
+                    if not selection:
+                        break
 
 
 def recall_set():
@@ -513,11 +547,11 @@ def recall_set():
         set = menu[selection][1]
 
         for mic, save in zip(mics, set):
-            mic.set_position(save.position)
+            mic.set_position(save)
 
 
 def remove_set():
-    menu = {0: ("Exit")}
+    menu = {0: "Exit"}
     menu.update({list(menu.keys())[-1] + index: set_name
                  for index, set_name in enumerate(sets.keys())})
 
@@ -534,26 +568,56 @@ def remove_set():
 
         del sets[menu[selection]]
 
-if __name__ == "__main__":
-    
+if __name__ == "__main__":   
     # setup
     try:
         mics, sets = pk.load(open("config.pkl", "rb"))
 
     except:
+        motors = [Motor(id = 2, motor_direction= -1, spool_diameter=5.9),
+                  Motor(id = 3, ip_adress= "192.168.1.3", encoder_direction= -1, spool_diameter=5.9),
+                  Motor(id = 4, ip_adress= "192.168.1.4", encoder_direction= -1, spool_diameter=5.9)]
+
+        mics = [Mic(motors=  motors)]
         sets = {}
-        num_mics = int(input("Enter the number of mics: "))
-        mics = [Mic(id=index).edit() for index in range(num_mics)]
 
-    # print(mics)
+    # main
+    try:
+        menu = {0: "Exit",
+                1: "select mic",
+                2: "recall set",
+                3: "save set",
+                4: "edit mics",
+                5: "edit sets"}
 
-    # # main
-    # try:
-    #     mics[0].operate()
+        while True:
+            for key in sorted(menu.keys()):
+                print(f"{key}: {menu[key]}")
 
-    # finally:
-    #     pk.dump((mics, sets), open("config.pkl", "wb"))
-    mymotors = [Motor(id = 2, motor_direction= -1, spool_diameter=5.9),
-                Motor(id = 3, ip_adress= "192.168.1.3", encoder_direction= -1, spool_diameter=5.9)]
+            while (selection := int(input("Make a selection: "))) not in menu.keys():
+                print("Invalid selection!")
 
-    Mic(motors=  mymotors).operate()
+            if menu[selection] == "Exit":
+                break
+
+            elif menu[selection] == "select mic":
+                while True:
+                    menu = {0: "Exit"}
+                    menu.update({index: mic for index, mic in enumerate(mics, 1)})
+
+                    for key in sorted(menu.keys()):
+                        print(f"{key}: {menu[key]}")
+
+                    while (selection := int(input("Make a selection: "))) not in menu.keys():
+                        print("Invalid selection!")
+
+                    if menu[selection] == "Exit":
+                        break
+
+                    menu[selection].operate()
+
+            elif menu[selection] == "edit mics":
+                edit_mics()
+                
+    finally:
+        pk.dump((mics, sets), open("config.pkl", "wb"))

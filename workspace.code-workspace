@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "serial-plotter"
+		},
+		{
+			"name": "arduino-client",
+			"path": "arduino-client"
+		},
+		{
+			"path": "python-server"
+		},
+		{
+			"path": "tension-simulation"
+		}
+	],
+	"settings": {}
+}

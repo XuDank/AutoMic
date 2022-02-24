@@ -1,7 +1,7 @@
 #include <Hardware.h>
 #include <Communication.h>
 
-const int BOARD_NUM = 3;
+const int BOARD_NUM = 4;
 
 void sync(bool = true);
 void read(String );
