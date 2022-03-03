@@ -19,15 +19,18 @@ void setupEthernet(int board)
     {
         if (!Ethernet.hardwareStatus())
         {
-            Serial.println("Ethernet shield was not found.");
+            Serial.println("Shield was not found.");
         }
         else if (Ethernet.linkStatus() == LinkOFF)
         {
-            Serial.println("Ethernet cable is not connected.");
+            Serial.println("Cable is not connected.");
             continue;
         }
-        break;
-
+        else
+        {
+          break;
+        }
+        
         delay(1000);
     }
 
@@ -47,7 +50,7 @@ String in()
   return String(buff);
 }
 
-void out(String msg)
+void out(String msg, int port = 5000)
 {
   char buff[UDP_TX_PACKET_MAX_SIZE];
 

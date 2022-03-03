@@ -11,8 +11,12 @@ const int IN1 = 5, IN2 = 6, PWM = 4;
 const double MIN_PWM = 30;
 
 double edir = 1, mdir = 1;
-double count = 0, tar = 0.0, pwm = 0.0;
+volatile double count = 0;
+double tar = 0.0, pwm = 0.0;
 double kP = 1.0, kI = 0.0, kD = 0.0;
+
+volatile int prev; 
+bool state = true;
 
 PID myPID(&count, &pwm, &tar, kP, kI, kD, DIRECT);
 
@@ -20,7 +24,7 @@ void setupMotor()
 {
     myPID.SetMode(AUTOMATIC);
     myPID.SetOutputLimits(-255.0, 255.0);
-    myPID.SetSampleTime(10);
+    myPID.SetSampleTime(1);
 
     pinMode(IN1, OUTPUT);
     pinMode(IN2, OUTPUT);
@@ -28,6 +32,9 @@ void setupMotor()
 
 void setPWM()
 {
+  if(millis() - prev < 500) // Move only if it hasn't bee stalled for longer that 500 ms
+  {
+    state = false;
     myPID.Compute();
 
     if (pwm * mdir > 0)
@@ -43,8 +50,8 @@ void setPWM()
         digitalWrite(IN2, HIGH);
         analogWrite(PWM, abs(pwm));
     }
-
-    //Serial.println("Target: " + String(tar) + " Count: " + String(count) + " PWM: " + String(pwm));
+    Serial.println("Target: " + String(tar) + " Count: " + String(count) + " PWM: " + String(pwm));
+  }
 }
 
 void readEncoder()
@@ -57,6 +64,8 @@ void readEncoder()
     {
         count -= edir;
     }
+
+    prev = millis();
 }
 
 void setupEncoder(void (*f)())

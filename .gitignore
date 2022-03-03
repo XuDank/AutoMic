@@ -1,1 +1,15 @@
 python-server/.vscode/launch.json
+python-server/desktop.ini
+CAD & f3d Files/desktop.ini
+arduino-client/src/desktop.ini
+arduino-client/lib/desktop.ini
+arduino-client/.vscode/desktop.ini
+arduino-client/include/desktop.ini
+.vscode/desktop.ini
+arduino-client/desktop.ini
+desktop.ini
+python-server/src/__pycache__/desktop.ini
+python-server/src/PID/desktop.ini
+serial-plotter/desktop.ini
+tension-simulation/desktop.ini
+workspace.code-workspace
