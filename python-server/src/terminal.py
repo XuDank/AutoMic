@@ -1,10 +1,6 @@
-import logging
-import sys 
-sys.path.append('..')
-
 import pickle as pk
 from automic import *
-from ipaddress import ip_address as adr
+from genuino import * 
 
 def position_input():
     while True:
@@ -63,7 +59,7 @@ def operate_motor(motor): # May need a thread to keep track of the error # Imple
             motor.toggle_motor()
         
         elif menu[selection] == "Send":
-            motor.write(input("Enter the message: "))
+            motor.send(input("Enter the message: "))
 
         elif menu[selection] == "Edit the ID":
             print(f"Current ID: {motor.id}")
@@ -72,7 +68,7 @@ def operate_motor(motor): # May need a thread to keep track of the error # Imple
         elif menu[selection] == "Edit the IP address":
             print(f"Current IP address: {motor.address}")
             motor.address = (
-                str(adr(input("Enter the new IP address: "))), 5000)
+                str(input("Enter the new IP address: ")), 5000)
 
         elif menu[selection] == "Edit the spool diameter":
             print(f"Current spool diameter: {motor.spool_diameter} cm")
@@ -124,7 +120,8 @@ def operate_mic(mic):
                 3: "Remove a motor",
                 4: "Edit the name",
                 5: "Edit the position",
-                6: "Select a motor"}
+                6: "Select a motor",
+                7: "Set the position"}
 
         for key in sorted(menu.keys()):
             print(f"{key}: {menu[key]}")
@@ -146,6 +143,9 @@ def operate_mic(mic):
 
         elif menu[selection] == "Edit the position":
             mic.position = position_input()
+
+        elif menu[selection] == "Set the position":
+            mic.set_position(position_input())
 
         elif menu[selection] == "Select a motor":
 
@@ -286,35 +286,28 @@ def operate_stage(stage):
                         operate_mic(mic = mic)
 
 if __name__ == "__main__":
-
-    logger = logging.getLogger(__name__)
-    logger.setLevel(logging.DEBUG)
-
-    file_handler = logging.FileHandler('logfile.log')
-    formatter    = logging.Formatter('%(asctime)s : %(levelname)s : %(name)s : %(message)s')
-    file_handler.setFormatter(formatter)
-
-    # add file handler to logger
-    logger.addHandler(file_handler)
-
     # setup
-    try:
-        stage = pk.load(open("config.pkl", "rb"))
+    # try:
+    #     stage = pk.load(open("config.pkl", "rb"))
 
-    except:
+    # except:
+    positions = [np.array([0,0,0]),
+                 np.array([226,69,0]),
+                 np.array([226,546,0])]
 
-        motors = [Motor(id =num, ip_address= f"192.168.1.{num+2}", encoder_direction= -1, kD = .005, logger = logger) for num in range(3)]
-        motors[1].position = np.array([226,69,0])
-        motors[2].position = np.array([226,546,0])
+    motors = [Motor(id =num, position= positions[num], port = 5000 + num, encoder_direction= -1, kD = .005) for num in range(3)]
+    fake_motors = [Genuino(port=motor.address[1]) for motor in motors]
 
-        mic = Mic(name = "Test Mic", motors=motors)
-        stage = Stage(mics = [mic])
+    #motors = [Motor(ip_address="192.168.1.2")]
+    mic = Mic(name = "Test Mic", motors=motors)
+    stage = Stage(mics = [mic])
 
-        stage.setup()
-
+    stage.setup()
+    sleep(.1)
     # main
-    try:
-        operate_stage(stage = stage)
+    #try:
+        #operate_stage(stage = stage)
+    operate_mic(mic=mic)
 
-    finally:
-        pk.dump(stage, open("config.pkl", "wb"))
+    #finally:
+        #pk.dump(stage, open("config.pkl", "wb"))

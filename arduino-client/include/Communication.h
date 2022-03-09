@@ -6,7 +6,8 @@
 #include <Ethernet.h>
 #include <EthernetUdp.h>
 
-EthernetUDP Udp;
+EthernetServer server = EthernetServer(5000);
+EthernetClient client;
 
 void setupEthernet(int board)
 {
@@ -15,52 +16,27 @@ void setupEthernet(int board)
 
     Ethernet.begin(MAC, IP);
 
-    while (1)
-    {
-        if (!Ethernet.hardwareStatus())
-        {
-            Serial.println("Shield was not found.");
-        }
-        else if (Ethernet.linkStatus() == LinkOFF)
-        {
-            Serial.println("Cable is not connected.");
-            continue;
-        }
-        else
-        {
-          break;
-        }
-        
-        delay(1000);
-    }
+    while (!Ethernet.hardwareStatus());
+    while (Ethernet.linkStatus() == LinkOFF);
 
-    Udp.begin(5000);
+    server.begin();
 
-    Serial.println(IP);
+    while(!server.available());
 
-    Serial.println("Done with ethernet setup.");
+    client = server.available();
 }
 
 String in()
 {
-  char buff[UDP_TX_PACKET_MAX_SIZE] = {};
-  Udp.read(buff, UDP_TX_PACKET_MAX_SIZE);
+  String msg;
+  msg = client.readString();
 
-  Serial.println("Recieved: " + String(buff));
-  return String(buff);
+  return msg;
 }
 
 void out(String msg, int port = 5000)
 {
-  char buff[UDP_TX_PACKET_MAX_SIZE];
-
-  msg.toCharArray(buff, UDP_TX_PACKET_MAX_SIZE);
-
-  Udp.beginPacket(Udp.remoteIP(), Udp.remotePort());
-  Udp.write(buff);
-  Udp.endPacket();
-
-  Serial.println("Sent: " + String(buff));
+  server.print(msg);
 }
 
 #endif
