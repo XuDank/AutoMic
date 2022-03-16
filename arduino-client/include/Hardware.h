@@ -15,8 +15,8 @@ volatile double count = 0;
 double tar = 0.0, pwm = 0.0;
 double kP = 1.0, kI = 0.0, kD = 0.0;
 
-volatile unsigned long prev; 
-bool state = true;
+volatile unsigned long prev;
+String state = "Setup";
 
 PID myPID(&count, &pwm, &tar, kP, kI, kD, DIRECT);
 
@@ -32,28 +32,26 @@ void setupMotor()
 
 void setPWM()
 {
-  myPID.Compute();
-  
-  if (pwm * mdir > 0)
-  {
-      digitalWrite(IN1, HIGH);
-      digitalWrite(IN2, LOW);
-      analogWrite(PWM, abs(pwm));
-  }
-  
-  else
-  {
-      digitalWrite(IN1, LOW);
-      digitalWrite(IN2, HIGH);
-      analogWrite(PWM, abs(pwm));
-  }
-  //Serial.println("Target: " + String(tar) + " Count: " + String(count) + " PWM: " + String(pwm));
+    if (pwm * mdir > 0)
+    {
+        digitalWrite(IN1, HIGH);
+        digitalWrite(IN2, LOW);
+        analogWrite(PWM, abs(pwm));
+    }
+
+    else
+    {
+        digitalWrite(IN1, LOW);
+        digitalWrite(IN2, HIGH);
+        analogWrite(PWM, abs(pwm));
+    }
+    ////Serial.println("Target: " + String(tar) + " Count: " + String(count) + " PWM: " + String(pwm));
 }
 
 void readEncoder()
 {
-  prev = millis();
-  
+    prev = millis();
+
     if (digitalRead(CHB) == HIGH)
     {
         count += edir;

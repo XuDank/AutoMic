@@ -4,7 +4,7 @@
 const int BOARD_NUM = 2;
 
 void setupUdp();
-void read(String );
+void read(String);
 
 void setup()
 {
@@ -14,41 +14,70 @@ void setup()
   setupMotor();
   setupEncoder(readEncoder);
 
-  out("Setup");
+  state = "Ready";
+  out(state);
 
   prev = millis();
 }
 
 void loop()
 {
-  if(!client.connected())
+  if (!client.connected())
   {
+    Serial.println("Disconnected");
+
     client.stop();
+
+    pwm = 0;
+    setPWM();
+
+    delay(10);
+
+    count = tar;
+
     setupEthernet(BOARD_NUM);
   }
 
   if (client.available())
   {
+    // Serial.println("Availible");
     read(in());
   }
 
-  if (!state && prev - millis() > 10)
+  if (state == "Moving" && millis() - prev > 150)
   {
-    if (abs(tar-count) > 11)
+    out(String(count));
+    if (abs(tar - count) > 150)
     {
-      out("Emergency Stop");
-      tar = count + 1000;
+      state = "Stopped";
+      pwm = -pwm;
       setPWM();
+
+      delay(500);
+
+      pwm = 0;
+      setPWM();
+
+      delay(100);
+
+      count = tar;
     }
 
     else
     {
-      out("Ready");
-      state = true;
+      state = "Ready";
+      tar = count;
     }
+
+    out(state);
   }
 
-  Serial.println(String(millis()) + "," + String(count) + "," + String(pwm));
+  else if (state == "Moving")
+  {
+    // Serial.println(String(millis()) + "," + String(count) + "," + String(pwm));
+  }
+
+  myPID.Compute();
   setPWM();
 }
 
@@ -56,18 +85,28 @@ void read(String com)
 {
   if (isDigit(com[0]) || com[0] == '-')
   {
-    prev = millis();
-    tar = com.toDouble();
-    state = false;
-    prev = millis();
+    if (state == "Ready")
+    {
+      tar = com.toDouble();
+      state = "Moving";
+      prev = millis();
+    }
+
+    else
+    {
+      out(state);
+    }
   }
 
   else if (com == "Sync")
   {
     out(String(count));
+    out(state);
+  }
 
-    if(state) out("Ready");
-    else out("Busy");
+  else if (com == "Ready")
+  {
+    state = com;
   }
 
   else if (com == "P")
@@ -79,6 +118,12 @@ void read(String com)
   {
     tar = count;
     setPWM();
+  }
+
+  else if (com[0] == 'S')
+  {
+    double speed = com.substring(1).toDouble() * 255.0;
+    myPID.SetOutputLimits(-speed, speed);
   }
 
   else if (com[0] == 'E')
@@ -106,7 +151,6 @@ void read(String com)
 
     myPID.SetTunings(kP, kI, kD);
   }
-
 
   else if (com.substring(0, 2) == "DE")
   {
