@@ -15,18 +15,23 @@ void setupEthernet(int board)
 
   Ethernet.begin(MAC, IP);
 
-  while (!Ethernet.hardwareStatus())
-    ;
-  while (Ethernet.linkStatus() == LinkOFF)
-    ;
+  while (!Ethernet.hardwareStatus()){
+    Serial.println("Ethenet not ready");
+    delay(1000);
+  }
+  while (Ethernet.linkStatus() == LinkOFF){
+    Serial.println("Link not up");
+    delay(1000);
+  }
 
   server.begin();
 
   Serial.println("Waiting for connection");
-  while (!server.available())
-    ;
 
-  client = server.available();
+  while(!(client = server.available())){
+    Serial.println("Waiting for client connect..");
+    delay(1000);
+  }
   Serial.println("Got a connection");
 }
 
