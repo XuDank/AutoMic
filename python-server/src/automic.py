@@ -105,7 +105,8 @@ class Motor:
         while True:
             try:
                 messages = self.socket.recv(2048)
-                messages = messages.decode("utf-8").splitlines()
+                messages = messages.decode("ascii").splitlines()
+                # print(self.address, messages)
 
                 for message in messages:
                     self.logger.info(f"Recieved: {message}")
@@ -118,7 +119,7 @@ class Motor:
 
     def send(self, message):
         try:
-            self.socket.send(bytes(f"{message}\n", "utf-8"))
+            self.socket.send(bytes(f"{message}\n", "ascii"))
             self.logger.info(f"Sent: {message}")
 
         except Exception as error:
@@ -144,13 +145,9 @@ class Motor:
 
     def sync(self):
         while True:
-            if self.status != "Ready":
-                self.send("Sync")
-                sleep(1)
-
-            elif self.status == "Ready" and time() % 1000 == 0:
-                self.send("Marco")
-
+            sleep(0.5)  # In seconds
+            self.send("Sync")
+                
     def send_length(self, length):
         self.status = ""
         self.send(length * self.pulses_per_cm)
