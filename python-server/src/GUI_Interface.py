@@ -11,7 +11,7 @@ import string
 import tkinter as tk
 from tkinter import *
 import numpy as np
-from automic import *
+from libraries.automic import *
 #import pythonserver 
 #sys.path.append(".")
 

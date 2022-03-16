@@ -1,6 +1,7 @@
 import pickle as pk
 from automic import *
-from genuino import * 
+from genuino import *
+
 
 def position_input():
     while True:
@@ -20,16 +21,14 @@ def position_input():
         except:
             print("Invalid input!")
 
-# Motor
 
-# Need a get motor method in the mic class
-
-def operate_motor(motor): # May need a thread to keep track of the error # Implement a timeout for the thread
+def operate_motor(motor):
     print(motor)
+
     while True:
         menu = {0: "Exit",
-                1: "Edit the spool diameter",
-                2: "Adjust the spool diameter",
+                1: "Edit the number of pulses per cm",
+                2: "",
                 3: "Edit the ID",
                 4: "Edit the IP address",
                 5: "Edit the position",
@@ -42,11 +41,7 @@ def operate_motor(motor): # May need a thread to keep track of the error # Imple
                 12: "Get the current cable length",
                 13: "Send"}
 
-        for key in sorted(menu.keys()):
-            print(f"{key}: {menu[key]}")
-
-        while (selection := int(input("Make a selection: "))) not in menu.keys():
-            print("Invalid selection!")
+        selection = menu_selection(menu)
 
         if menu[selection] == "Exit":
             break
@@ -57,7 +52,7 @@ def operate_motor(motor): # May need a thread to keep track of the error # Imple
         elif menu[selection] == "Change the direction":
             motor.toggle_encoder()
             motor.toggle_motor()
-        
+
         elif menu[selection] == "Send":
             motor.send(input("Enter the message: "))
 
@@ -70,21 +65,11 @@ def operate_motor(motor): # May need a thread to keep track of the error # Imple
             motor.address = (
                 str(input("Enter the new IP address: ")), 5000)
 
-        elif menu[selection] == "Edit the spool diameter":
-            print(f"Current spool diameter: {motor.spool_diameter} cm")
+        elif menu[selection] == "Edit the number of pulses per cm: ":
+            print(f"Current number of pulses per cm: {motor.pulses_per_cm} cm")
 
-            motor.spool_diameter = float(
-                input("Enter the new spool diameter: "))
-            motor.pulses_per_cm = motor.pulses_per_revolution / \
-                (np.pi * motor.spool_diameter)
-
-        elif menu[selection] == "Edit the encoder resolution":
-            print(f"Current encoder resolution: {motor.pulses_per_revolution}")
-
-            motor.pulses_per_revolution = float(
-                input("Enter the new encoder resolution: "))
-            motor.pulses_per_cm = motor.pulses_per_revolution / \
-                (np.pi * motor.spool_diameter)
+            motor.pulses_per_cm = float(
+                input("Enter the new number of pulses per cm: "))
 
         elif menu[selection] == "Edit the position":
             print(f"Current position: {motor.position}")
@@ -94,7 +79,7 @@ def operate_motor(motor): # May need a thread to keep track of the error # Imple
         elif menu[selection] == "Edit the PID values":
             print(f"Current values: {motor.PID}")
 
-            motor.pid = position_input()
+            motor.pid = list(position_input())
 
         elif menu[selection] == "Edit the cable length":
             print(f"Current cable length: {motor.length}")
@@ -102,7 +87,7 @@ def operate_motor(motor): # May need a thread to keep track of the error # Imple
             motor.length = float(input("Enter the new cable length: "))
 
             motor.set_length(motor.length)
-            
+
         elif menu[selection] == "Move":
             length = motor.length + float(input("Enter the amount: "))
             motor.send_length(length)
@@ -113,6 +98,7 @@ def operate_motor(motor): # May need a thread to keep track of the error # Imple
 
 def operate_mic(mic):
     print(mic)
+
     while True:
         menu = {0: "Exit",
                 1: "Move",
@@ -121,19 +107,20 @@ def operate_mic(mic):
                 4: "Edit the name",
                 5: "Edit the position",
                 6: "Select a motor",
-                7: "Set the position"}
+                7: "Set the position",
+                8: "Step move",
+                9: "Broadcast"}
 
-        for key in sorted(menu.keys()):
-            print(f"{key}: {menu[key]}")
-
-        while (selection := int(input("Make a selection: "))) not in menu.keys():
-            print("Invalid selection!")
+        selection = menu_selection(menu)
 
         if menu[selection] == "Exit":
             break
 
-        elif  menu[selection] == "Move":
+        elif menu[selection] == "Move":
             mic.move(position_input())
+
+        elif menu[selection] == "Step move":
+            mic.step_move(position_input())
 
         elif menu[selection] == "Add a motor":
             mic.motors.append(Motor(server=mic.motors[0].server))
@@ -154,11 +141,7 @@ def operate_mic(mic):
                 menu.update({index: motor for index,
                             motor in enumerate(mic.motors, 1)})
 
-                for key in sorted(menu.keys()):
-                    print(f"{key}: {menu[key]}")
-
-                while (selection := int(input("Make a selection: "))) not in menu.keys():
-                    print("Invalid selection!")
+                selection = menu_selection(menu)
 
                 if menu[selection] == "Exit":
                     break
@@ -170,11 +153,7 @@ def operate_mic(mic):
                             1: "Remove",
                             2: "Operate"}
 
-                    for key in sorted(menu.keys()):
-                        print(f"{key}: {menu[key]}")
-
-                    while (selection := int(input("Make a selection: "))) not in menu.keys():
-                        print("Invalid selection!")
+                    selection = menu_selection(menu)
 
                     if menu[selection] == "Exit":
                         break
@@ -185,28 +164,29 @@ def operate_mic(mic):
                     elif menu[selection] == "Operate":
                         operate_motor(motor)
 
+        elif menu[selection] == "Broadcast":
+            mic.broadcast(input("Broadcast: "))
+
         else:
             print("Not implemented in the code!")
 
+
 def operate_stage(stage):
     print(stage)
-    menu = {0: "Exit",
-            1: "Save preset",
-            2: "Select preset",
-            3: "Remove a motor",
-            4: "Select a mic"}
 
     while True:
-        for key in sorted(menu.keys()):
-            print(f"{key}: {menu[key]}")
+        menu = {0: "Exit",
+                1: "Save preset",
+                2: "Select preset",
+                3: "Remove a motor",
+                4: "Select a mic"}
 
-        while (selection := int(input("Make a selection: "))) not in menu.keys():
-            print("Invalid selection!")
+        selection = menu_selection(menu)
 
         if menu[selection] == "Exit":
             break
 
-        elif  menu[selection] == "Save preset":
+        elif menu[selection] == "Save preset":
             stage.save_preset()
 
         elif menu[selection] == "Select preset":
@@ -216,11 +196,7 @@ def operate_stage(stage):
                 menu.update({index: preset_name for index,
                             preset_name in enumerate(stage.presets.keys(), 1)})
 
-                for key in sorted(menu.keys()):
-                    print(f"{key}: {menu[key]}")
-
-                while (selection := int(input("Make a selection: "))) not in menu.keys():
-                    print("Invalid selection!")
+                selection = menu_selection(menu)
 
                 if menu[selection] == "Exit":
                     break
@@ -233,11 +209,7 @@ def operate_stage(stage):
                             1: "Remove",
                             2: "Recall"}
 
-                    for key in sorted(menu.keys()):
-                        print(f"{key}: {menu[key]}")
-
-                    while (selection := int(input("Make a selection: "))) not in menu.keys():
-                        print("Invalid selection!")
+                    selection = menu_selection(menu)
 
                     if menu[selection] == "Exit":
                         break
@@ -251,13 +223,10 @@ def operate_stage(stage):
         elif menu[selection] == "Select a mic":
             while True:
                 menu = {0: "Exit"}
-                menu.update({index: mic for index, mic in enumerate(stage.mics, 1)})
+                menu.update(
+                    {index: mic for index, mic in enumerate(stage.mics, 1)})
 
-                for key in sorted(menu.keys()):
-                    print(f"{key}: {menu[key]}")
-
-                while (selection := int(input("Make a selection: "))) not in menu.keys():
-                    print("Invalid selection!")
+                selection = menu_selection(menu)
 
                 if menu[selection] == "Exit":
                     break
@@ -270,11 +239,7 @@ def operate_stage(stage):
                             1: "Remove",
                             2: "Operate"}
 
-                    for key in sorted(menu.keys()):
-                        print(f"{key}: {menu[key]}")
-
-                    while (selection := int(input("Make a selection: "))) not in menu.keys():
-                        print("Invalid selection!")
+                    selection = menu_selection(menu)
 
                     if menu[selection] == "Exit":
                         break
@@ -283,31 +248,47 @@ def operate_stage(stage):
                         stage.mics.remove(mic)
 
                     elif menu[selection] == "Operate":
-                        operate_mic(mic = mic)
+                        operate_mic(mic=mic)
+
+
+def menu_selection(menu):
+    for key in sorted(menu.keys()):
+        print(f"{key}: {menu[key]}")
+
+    while (selection := int(input("Make a selection: "))) not in menu.keys():
+        print("Invalid selection!")
+
+    return selection
+
 
 if __name__ == "__main__":
     # setup
-    # try:
-    #     stage = pk.load(open("config.pkl", "rb"))
+    ip_addresses = [f"192.168.1.{num}" for num in [2, 3, 4]]
 
-    # except:
-    positions = [np.array([0,0,0]),
-                 np.array([226,69,0]),
-                 np.array([226,546,0])]
+    positions = [np.array([0, 0, 0]),
+                 np.array([226, 69, 0]),
+                 np.array([226, 546, 0])]
 
-    motors = [Motor(id =num, position= positions[num], port = 5000 + num, encoder_direction= -1, kD = .005) for num in range(3)]
-    fake_motors = [Genuino(port=motor.address[1]) for motor in motors]
+    directions = [(1, 1), (1, 1), (1, 1)]
 
-    #motors = [Motor(ip_address="192.168.1.2")]
-    mic = Mic(name = "Test Mic", motors=motors)
-    stage = Stage(mics = [mic])
+    parameters = zip(ip_addresses, positions, directions)
+
+    motors = [Motor(number=index, position=position, ip_address=ip_address, direction=direction, kD=.005)
+              for index, (ip_address, position, direction) in enumerate(parameters)]
+
+    # motors = [Motor(number=index, position=position, port=5000+index, direction=direction, kD=.005)
+    #           for index, (ip_address, position, direction) in enumerate(parameters)]
+
+    # fake_motors = [Genuino(address=motor.address) for motor in motors]
+
+    mics = [Mic(name="Test Mic", motors=motors)]
+    stage = Stage(mics=mics)
 
     stage.setup()
-    sleep(.1)
-    # main
-    #try:
-        #operate_stage(stage = stage)
-    operate_mic(mic=mic)
 
-    #finally:
-        #pk.dump(stage, open("config.pkl", "wb"))
+    # main
+    try:
+        operate_stage(stage=stage)
+
+    finally:
+        pk.dump(stage, open("config.pkl", "wb"))

@@ -1,26 +1,26 @@
 import os
-import numpy as np
 import socket as skt
 import logging as log
-
 from threading import Thread
-from time import sleep
-from time import time
+
+import numpy as np
 
 os.makedirs(f"{os.getcwd()}/log/genuino", exist_ok=True)
 
+
 class Genuino:
-    def __init__(self, port) -> None:
-        self.logger = log.getLogger(f"genuino{port}")
+    def __init__(self, address=("0.0.0.0", 5000)) -> None:
+        self.logger = log.getLogger(f"genuino{address[1]}")
         self.logger.setLevel(log.DEBUG)
 
-        file_handler = log.FileHandler(f"log/genuino/{port}.log", mode="w")
-        formatter    = log.Formatter("%(asctime)s : %(message)s")
+        file_handler = log.FileHandler(
+            f"log/genuino/{address[1]}.log", mode="w")
+        formatter = log.Formatter("%(asctime)s : %(message)s")
 
         file_handler.setFormatter(formatter)
         self.logger.addHandler(file_handler)
 
-        self.address = ("0.0.0.0", port)
+        self.address = ("0.0.0.0", address[1])
         self.socket = skt.socket(skt.AF_INET, skt.SOCK_STREAM)
         self.connected = False
         self.state = True
@@ -29,56 +29,58 @@ class Genuino:
         self.target = 0
 
         self.setup()
-    
+
     def setup(self):
         self.socket.bind(self.address)
         self.socket.listen()
 
-        self.thread = Thread(target = self.loop, daemon= True)
+        self.thread = Thread(target=self.loop, daemon=True)
         self.thread.start()
+
+        return self
 
     def loop(self):
         while True:
-            self.client, _ = self.socket.accept()
-            self.client.settimeout(0.0)
+            self.client, address = self.socket.accept()
 
-            self.logger.info(f"Connected to {self.address[1]}")
+            self.logger.info(f"Connected to: {address[0]}, {address[1]}")
 
             while True:
                 try:
-                    message = self.client.recv(2048).decode("utf-8")
+                    messages = self.client.recv(2048)
 
-                    if not message:
+                    if not messages:
                         break
 
-                    self.logger.info((f"Recieved: {message}"))
-                    self.read(message)
+                    messages = messages.decode("utf-8").splitlines()
 
-                except:
-                    pass
-        
+                    for message in messages:
+                        self.logger.info(f"Recieved: {message}")
+                        self.read(message)
+
+                except Exception as error:
+                    self.logger.exception(error)
+
             self.client.close()
 
-            self.logger.info(f"Client disconected ({self.address})")
-                            
+            self.logger.info(
+                f"Client disconected from: {address[0]}, {address[1]}")
+
     def send(self, message):
         try:
             self.client.send(str(message).encode("utf-8"))
 
             self.logger.info(f"Sent: {message}")
 
-        except skt.error as error:
-            if self.logger is not None:
-                self.logger.info(f"{error}")
-            
-            self.logger.info(f"{error}")
+        except Exception as error:
+            self.logger.exception(error)
 
     def read(self, message):
         try:
             self.count = float(message)
             self.state = False
-        
-        except:
+
+        except ValueError:
             if message == "Sync":
                 self.send(self.count)
 
@@ -94,6 +96,3 @@ class Genuino:
 
             elif message[0] == "E":
                 self.count = float(message[1:-1])
-
-if __name__ == "__main__":
-    pass

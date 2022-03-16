@@ -1,0 +1,8 @@
+{
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/libs/"
+    ],
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": false,
+    "python.linting.pycodestyleEnabled": false
+}

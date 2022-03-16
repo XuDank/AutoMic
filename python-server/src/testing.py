@@ -1,14 +1,61 @@
+""""test"""
 from matplotlib import pyplot as pl
 from automic import *
+from genuino import *
+
 import pandas as pd
 from serial import Serial
-import logging
+
+
+def speed(motor, arduino):
+    throttle = list()
+    speed = list()
+
+    motor.set_length(0.0)
+
+    for num in range(25, 100, 5):
+        motor.send(f"S{num/100}")
+        motor.send_parameters()
+
+        motor.send_length(20)
+
+        timer = []
+        counter = []
+
+        while not motor.status:
+            try:
+                csv_line = tuple(
+                    arduino.readline().decode().strip().split(","))
+                timer.append(float(csv_line[0]))
+                counter.append(float(csv_line[1]) / motor.pulses_per_cm)
+            except:
+                pass
+
+        throttle.append(num)
+        speed.append((counter[-1]-counter[0])/(timer[-1]-timer[0]))
+
+        motor.send_length(0)
+
+    data = {"throttle": throttle, "speed": speed}
+    data_frame = pd.DataFrame(data=data)
+
+    pl.plot(data_frame["throttle"], data_frame["speed"],
+            "r.", label="Measured")
+
+    pl.xlabel("Throttle (in %)")
+    pl.ylabel("Speed (in cm/s)")
+
+    pl.title("Speed vs throttle")
+    pl.show()
+    pl.savefig(f"speed/speed plot")
+
 
 def pid_tunner(motor, arduino):
+    motor.set_length(0.0)
 
     while True:
         menu = {0: "Exit",
-            1: "Go"}
+                1: "Go"}
 
         for key in sorted(menu.keys()):
             print(f"{key}: {menu[key]}")
@@ -20,11 +67,11 @@ def pid_tunner(motor, arduino):
             break
 
         elif menu[selection] == "Go":
-            motor.PID =  [float(parameter) for parameter in input("Enter coordinates: ").split()]
+            motor.PID = [float(parameter)
+                         for parameter in input("Enter coordinates: ").split()]
+
             motor.set_length(0)
             motor.send_parameters()
-
-            motor.write("PidResponse")
 
             motor.send_length(5)
 
@@ -34,10 +81,12 @@ def pid_tunner(motor, arduino):
 
             while not motor.status:
                 try:
-                    csv_line = tuple(arduino.readline().decode().strip().split(","))
+                    csv_line = tuple(
+                        arduino.readline().decode().strip().split(","))
                     timer.append(float(csv_line[0]))
                     counter.append(float(csv_line[1]) / motor.pulses_per_cm)
                     pwm.append(float(csv_line[2]))
+
                 except Exception as e:
                     print(e)
                     pass
@@ -46,22 +95,27 @@ def pid_tunner(motor, arduino):
 
             data = {"time": timer, "length": counter, "pwm": pwm}
             data_frame = pd.DataFrame(data=data)
-            data_frame["speed"] = data_frame.diff()["length"] / data_frame.diff()["time"]
-            pl.plot(data_frame["time"], data_frame["length"], "b-", label = "Measured")
-            pl.plot([0, data_frame["time"].max()], [5, 5], "r--", label = "Actual")
+            data_frame["speed"] = data_frame.diff()["length"] / \
+                data_frame.diff()["time"]
+            pl.plot(data_frame["time"], data_frame["length"],
+                    "b-", label="Measured")
+            pl.plot([0, data_frame["time"].max()],
+                    [5, 5], "r--", label="Actual")
             pl.xlabel("Time (in ms)")
             pl.ylabel("Length (in cm)")
-            pl.title(f"P = {motor.PID[0]}, I = {motor.PID[1]}, D = {motor.PID[2]}")
-            pl.savefig(f"pid/P{motor.PID[0]}I{motor.PID[1]}D{motor.PID[2]}".replace(".", ""))
+            pl.title(
+                f"P = {motor.PID[0]}, I = {motor.PID[1]}, D = {motor.PID[2]}")
+            pl.savefig(
+                f"pid/P{motor.PID[0]}I{motor.PID[1]}D{motor.PID[2]}".replace(".", ""))
             pl.show()
 
+
 def calibrate(motor):
-    while motor.length:
-        motor.set_length(0.0)
+    motor.set_length(0.0)
 
     while True:
         menu = {0: "Exit",
-            1: "Go"}
+                1: "Go"}
 
         for key in sorted(menu.keys()):
             print(f"{key}: {menu[key]}")
@@ -82,10 +136,10 @@ def calibrate(motor):
                 pass
 
             final_length = motor.length
-            final_measurement = float(input("Final measurement (in cm): ")) 
+            final_measurement = float(input("Final measurement (in cm): "))
 
             measured_length = (final_length - initial_length)
-            actual_length = (final_measurement- initial_measurement)
+            actual_length = (final_measurement - initial_measurement)
 
             fudge_factor = (actual_length - measured_length) / actual_length
 
@@ -94,6 +148,7 @@ def calibrate(motor):
             motor.send_length(0)
             motor.pulses_per_cm *= fudge_factor
 
+
 def accuracy_test(motor):
     number_of_trials = int(input("Enter the number of trials: "))
     desired_length = int(input("Enter the desired length: "))
@@ -101,8 +156,7 @@ def accuracy_test(motor):
     measured_length = []
     actual_length = []
 
-    while motor.length:
-        motor.set_length(0.0)
+    motor.set_length(0.0)
 
     for _ in range(number_of_trials):
         initial_length = motor.length
@@ -113,26 +167,30 @@ def accuracy_test(motor):
         while not motor.status:
             pass
 
-        final_measurement = float(input("Final measurement (in cm): ")) 
+        final_measurement = float(input("Final measurement (in cm): "))
 
         measured_length.append(abs(motor.length - initial_length))
-        actual_length.append(abs(final_measurement- initial_measurement))
+        actual_length.append(abs(final_measurement - initial_measurement))
 
         motor.send_length(0.0)
 
         while not motor.status:
             pass
 
-    data = {"Measured Length (in cm)": measured_length, "Actual Length (in cm)": actual_length}
+    data = {"Measured Length (in cm)": measured_length,
+            "Actual Length (in cm)": actual_length}
     data_frame = pd.DataFrame(data)
-    data_frame["Measured Error (in cm)"] = data_frame["Actual Length (in cm)"] - data_frame["Measured Length (in cm)"]
+    data_frame["Measured Error (in cm)"] = data_frame["Actual Length (in cm)"] - \
+        data_frame["Measured Length (in cm)"]
     data_frame.to_csv(f"accuracy/{int(desired_length)}.csv")
 
     data_frame["Measured Error (in cm)"].hist()
 
-    pl.title(f"Desired length: {desired_length} cm\n(N = {number_of_trials}, $\mu$ = {np.mean(data_frame['Measured Error (in cm)']):.3f} cm, $\sigma$ = {np.std(data_frame['Measured Error (in cm)']):.3f} cm)")
+    pl.title(
+        f"Desired length: {desired_length} cm\n(N = {number_of_trials}, $\mu$ = {np.mean(data_frame['Measured Error (in cm)']):.3f} cm, $\sigma$ = {np.std(data_frame['Measured Error (in cm)']):.3f} cm)")
     pl.xlabel("Measured Error (in cm)")
     pl.savefig(f"accuracy/{int(desired_length)}cm")
+
 
 def reliability_test(motor):
     number_of_trials = int(input("Enter the number of trials: "))
@@ -140,8 +198,7 @@ def reliability_test(motor):
 
     measured_error = []
 
-    while motor.length:
-        motor.set_length(0.0)
+    motor.set_length(0.0)
 
     for _ in range(number_of_trials):
         motor.send_length(desired_length)
@@ -162,27 +219,17 @@ def reliability_test(motor):
 
     data_frame.hist()
 
-    pl.title(f"Desired length: {desired_length} cm\n(N = {number_of_trials}, $\mu$ = {np.mean(measured_error):.3f} cm, $\sigma$ = {np.std(measured_error):.3f} cm)")
+    pl.title(
+        f"Desired length: {desired_length} cm\n(N = {number_of_trials}, $\mu$ = {np.mean(measured_error):.3f} cm, $\sigma$ = {np.std(measured_error):.3f} cm)")
     pl.xlabel("Measured Error (in cm)")
     pl.savefig(f"reliability/{int(desired_length)}cm")
 
+
 if __name__ == "__main__":
-
-    logger = logging.getLogger(__name__)
-    logger.setLevel(logging.DEBUG)
-
-    file_handler = logging.FileHandler('logfile.log')
-    formatter    = logging.Formatter('%(asctime)s : %(levelname)s : %(name)s : %(message)s')
-    file_handler.setFormatter(formatter)
-
-    # add file handler to logger
-    logger.addHandler(file_handler)
-
-
-    motors = [Motor(id = 1, ip_address= "192.168.1.4", encoder_direction=-1, motor_direction=-1, kP = 5, kI = 0.1, kD = .01, logger = logger), Motor(id = 2, ip_address= "192.168.1.3", encoder_direction=-1, motor_direction=-1, kP = 5, kI = 0.1, kD = .01, logger = logger)]
+    motors = [Motor(ip_address="192.168.1.4")]
     
-    mic = Mic(motors=motors)
-    stage = Stage(mics = [mic])
+    mic = Mic(name="Test Mic", motors=motors)
+    stage = Stage(mics=[mic])
     motor = motors[0]
     stage.setup()
 
@@ -204,13 +251,14 @@ if __name__ == "__main__":
             break
 
         elif menu[selection] == "Move":
-            motor.send_length(motor.length + float(input("Enter the amount (in cm): ")))
+            motor.send_length(
+                motor.length + float(input("Enter the amount (in cm): ")))
 
         elif menu[selection] == "PID Tunner":
-            arduino = Serial(port = "COM10", baudrate = 9600)
+            arduino = Serial(port="COM10", baudrate=9600)
             pid_tunner(motor=motor, arduino=arduino)
             arduino.close()
-        
+
         elif menu[selection] == "Calibrate":
             calibrate(motor=motor)
 
