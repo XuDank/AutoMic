@@ -1,0 +1,3111 @@
+2022-04-14 13:53:09,554 : Connecting...
+2022-04-14 13:53:09,562 : Sent: Yes
+2022-04-14 13:53:09,605 : Recieved: Ready
+2022-04-14 13:53:09,620 : Connected! (1 attempt(s))
+2022-04-14 13:53:09,697 : Sent: E0.0
+2022-04-14 13:53:09,763 : Sent: DM1
+2022-04-14 13:53:09,777 : Sent: DE-1
+2022-04-14 13:53:09,779 : Sent: kP1.0
+2022-04-14 13:53:09,780 : Sent: kI0.0
+2022-04-14 13:53:09,780 : Sent: kD0.0
+2022-04-14 13:53:09,788 : Sent: Sync
+2022-04-14 13:53:09,886 : Recieved: Ready
+2022-04-14 13:53:14,804 : Sent: Sync
+2022-04-14 13:53:14,897 : Recieved: Ready
+2022-04-14 13:53:19,819 : Sent: Sync
+2022-04-14 13:53:19,928 : Recieved: Ready
+2022-04-14 13:53:24,852 : Sent: Sync
+2022-04-14 13:53:24,963 : Recieved: Ready
+2022-04-14 13:53:29,920 : Sent: Sync
+2022-04-14 13:53:30,047 : Recieved: Ready
+2022-04-14 13:53:35,021 : Sent: Sync
+2022-04-14 13:53:35,083 : Recieved: Ready
+2022-04-14 13:53:40,064 : Sent: Sync
+2022-04-14 13:53:40,191 : Recieved: Ready
+2022-04-14 13:53:45,112 : Sent: Sync
+2022-04-14 13:53:45,112 : Recieved: Ready
+2022-04-14 13:53:50,126 : Sent: Sync
+2022-04-14 13:53:50,141 : Recieved: Ready
+2022-04-14 13:53:55,142 : Sent: Sync
+2022-04-14 13:53:55,157 : Recieved: Ready
+2022-04-14 13:54:00,155 : Sent: Sync
+2022-04-14 13:54:00,169 : Recieved: Ready
+2022-04-14 13:54:05,167 : Sent: Sync
+2022-04-14 13:54:05,198 : Recieved: Ready
+2022-04-14 13:54:10,174 : Sent: Sync
+2022-04-14 13:54:10,235 : Recieved: Ready
+2022-04-14 13:54:11,429 : Sent: E21412.0168308315
+2022-04-14 13:54:15,186 : Sent: Sync
+2022-04-14 13:54:15,247 : Recieved: Ready
+2022-04-14 13:54:16,807 : Sent: S1.0
+2022-04-14 13:54:16,810 : Sent: 19159.108410045243
+2022-04-14 13:54:16,813 : Moving: -8.443951973219626 inches...
+2022-04-14 13:54:16,879 : Recieved: Moving
+2022-04-14 13:54:16,881 : Recieved: 21400.02
+2022-04-14 13:54:17,019 : Recieved: 21312.02
+2022-04-14 13:54:17,047 : Recieved: 21219.02
+2022-04-14 13:54:17,174 : Recieved: 21125.02
+2022-04-14 13:54:17,338 : Recieved: 21030.02
+2022-04-14 13:54:17,357 : Recieved: 20937.02
+2022-04-14 13:54:17,487 : Recieved: 20842.02
+2022-04-14 13:54:17,635 : Recieved: 20748.02
+2022-04-14 13:54:17,647 : Recieved: 20653.02
+2022-04-14 13:54:17,787 : Recieved: 20557.02
+2022-04-14 13:54:17,935 : Recieved: 20463.02
+2022-04-14 13:54:17,945 : Recieved: 20462.02
+2022-04-14 13:54:17,954 : Recieved: 20367.02
+2022-04-14 13:54:18,083 : Recieved: 20272.02
+2022-04-14 13:54:18,224 : Recieved: 20177.02
+2022-04-14 13:54:18,244 : Recieved: 20082.02
+2022-04-14 13:54:18,380 : Recieved: 19986.02
+2022-04-14 13:54:18,524 : Recieved: 19891.02
+2022-04-14 13:54:18,541 : Recieved: 19796.02
+2022-04-14 13:54:18,680 : Recieved: 19700.02
+2022-04-14 13:54:18,817 : Recieved: 19606.02
+2022-04-14 13:54:18,828 : Recieved: 19605.02
+2022-04-14 13:54:18,841 : Recieved: 19510.02
+2022-04-14 13:54:18,850 : Recieved: 19509.02
+2022-04-14 13:54:18,990 : Recieved: 19414.02
+2022-04-14 13:54:19,130 : Recieved: 19324.02
+2022-04-14 13:54:19,140 : Recieved: Close
+2022-04-14 13:54:19,648 : Recieved: 19061.02
+2022-04-14 13:54:19,660 : Recieved: Ready
+2022-04-14 13:54:20,195 : Sent: Sync
+2022-04-14 13:54:20,288 : Recieved: Ready
+2022-04-14 13:54:22,924 : Sent: S1.0
+2022-04-14 13:54:22,942 : Sent: 21277.574818788853
+2022-04-14 13:54:22,945 : Moving: 8.307697846559435 inches...
+2022-04-14 13:54:23,047 : Recieved: Moving
+2022-04-14 13:54:23,049 : Recieved: 19127.02
+2022-04-14 13:54:23,066 : Recieved: 19128.02
+2022-04-14 13:54:23,206 : Recieved: 19223.02
+2022-04-14 13:54:23,344 : Recieved: 19320.02
+2022-04-14 13:54:23,353 : Recieved: 19418.02
+2022-04-14 13:54:23,488 : Recieved: 19515.02
+2022-04-14 13:54:23,631 : Recieved: 19613.02
+2022-04-14 13:54:23,643 : Recieved: 19614.02
+2022-04-14 13:54:23,652 : Recieved: 19711.02
+2022-04-14 13:54:23,661 : Recieved: 19712.02
+2022-04-14 13:54:23,796 : Recieved: 19809.02
+2022-04-14 13:54:23,937 : Recieved: 19908.02
+2022-04-14 13:54:23,947 : Recieved: 20006.02
+2022-04-14 13:54:24,076 : Recieved: 20105.02
+2022-04-14 13:54:24,087 : Recieved: 20106.02
+2022-04-14 13:54:24,224 : Recieved: 20204.02
+2022-04-14 13:54:24,237 : Recieved: 20302.02
+2022-04-14 13:54:24,388 : Recieved: 20401.02
+2022-04-14 13:54:24,407 : Recieved: 20402.02
+2022-04-14 13:54:24,434 : Recieved: 20501.02
+2022-04-14 13:54:24,443 : Recieved: 20502.02
+2022-04-14 13:54:24,580 : Recieved: 20599.02
+2022-04-14 13:54:24,722 : Recieved: 20699.02
+2022-04-14 13:54:24,733 : Recieved: 20798.02
+2022-04-14 13:54:24,877 : Recieved: 20897.02
+2022-04-14 13:54:24,888 : Recieved: 20898.02
+2022-04-14 13:54:25,018 : Recieved: 20996.02
+2022-04-14 13:54:25,033 : Recieved: 21096.02
+2022-04-14 13:54:25,051 : Recieved: 21113.02
+2022-04-14 13:54:25,076 : Recieved: Close
+2022-04-14 13:54:25,805 : Recieved: 21405.02
+2022-04-14 13:54:25,868 : Recieved: Ready
+2022-04-14 13:54:25,900 : Sent: Sync
+2022-04-14 13:54:26,012 : Recieved: Ready
+2022-04-14 13:54:29,358 : Sent: S1.0
+2022-04-14 13:54:29,362 : Sent: 22119.950450298704
+2022-04-14 13:54:29,366 : Moving: 2.67957557920073 inches...
+2022-04-14 13:54:29,407 : Recieved: Moving
+2022-04-14 13:54:29,531 : Recieved: 21445.02
+2022-04-14 13:54:29,548 : Recieved: 21446.02
+2022-04-14 13:54:29,557 : Recieved: 21541.02
+2022-04-14 13:54:29,568 : Recieved: 21542.02
+2022-04-14 13:54:29,704 : Recieved: 21639.02
+2022-04-14 13:54:29,727 : Recieved: 21737.02
+2022-04-14 13:54:29,860 : Recieved: 21834.02
+2022-04-14 13:54:29,871 : Recieved: 21835.02
+2022-04-14 13:54:30,005 : Recieved: 21932.02
+2022-04-14 13:54:30,015 : Recieved: 21955.02
+2022-04-14 13:54:30,024 : Recieved: Close
+2022-04-14 13:54:30,684 : Recieved: 22231.02
+2022-04-14 13:54:30,772 : Recieved: Ready
+2022-04-14 13:54:31,006 : Sent: Sync
+2022-04-14 13:54:31,148 : Recieved: Ready
+2022-04-14 13:54:34,883 : Sent: S1.0
+2022-04-14 13:54:34,886 : Sent: 21458.20092488243
+2022-04-14 13:54:34,889 : Moving: -2.896543460920327 inches...
+2022-04-14 13:54:34,974 : Recieved: Moving
+2022-04-14 13:54:34,975 : Recieved: 22218.02
+2022-04-14 13:54:35,113 : Recieved: 22130.02
+2022-04-14 13:54:35,125 : Recieved: 22036.02
+2022-04-14 13:54:35,135 : Recieved: 22035.02
+2022-04-14 13:54:35,268 : Recieved: 21941.02
+2022-04-14 13:54:35,408 : Recieved: 21847.02
+2022-04-14 13:54:35,420 : Recieved: 21753.02
+2022-04-14 13:54:35,429 : Recieved: 21752.02
+2022-04-14 13:54:35,564 : Recieved: 21658.02
+2022-04-14 13:54:35,575 : Recieved: 21657.02
+2022-04-14 13:54:35,583 : Recieved: 21623.02
+2022-04-14 13:54:35,593 : Recieved: Close
+2022-04-14 13:54:36,267 : Recieved: 21375.02
+2022-04-14 13:54:36,292 : Recieved: Ready
+2022-04-14 13:54:36,340 : Sent: Sync
+2022-04-14 13:54:36,438 : Recieved: Ready
+2022-04-14 13:54:40,051 : Sent: S1.0
+2022-04-14 13:54:40,054 : Sent: 19485.210243030568
+2022-04-14 13:54:40,056 : Moving: -7.083049927436747 inches...
+2022-04-14 13:54:40,096 : Recieved: Moving
+2022-04-14 13:54:40,220 : Recieved: 21341.02
+2022-04-14 13:54:40,237 : Recieved: 21250.02
+2022-04-14 13:54:40,257 : Recieved: 21249.02
+2022-04-14 13:54:40,393 : Recieved: 21156.02
+2022-04-14 13:54:40,418 : Recieved: 21062.02
+2022-04-14 13:54:40,616 : Recieved: 20969.02
+2022-04-14 13:54:40,654 : Recieved: 20875.02
+2022-04-14 13:54:40,799 : Recieved: 20781.02
+2022-04-14 13:54:40,860 : Recieved: 20688.02
+2022-04-14 13:54:41,094 : Recieved: 20594.02
+2022-04-14 13:54:41,152 : Recieved: 20593.02
+2022-04-14 13:54:41,298 : Recieved: 20501.02
+2022-04-14 13:54:41,694 : Recieved: 20413.02
+2022-04-14 13:54:41,844 : Recieved: 20327.02
+2022-04-14 13:54:42,433 : Recieved: 20247.02
+2022-04-14 13:54:42,872 : Recieved: 20167.02
+2022-04-14 13:54:43,048 : Recieved: 20092.02
+2022-04-14 13:54:43,205 : Recieved: 20022.02
+2022-04-14 13:54:43,819 : Recieved: 20022.02
+2022-04-14 13:54:44,194 : Recieved: 19958.02
+2022-04-14 13:54:44,557 : Recieved: 19898.02
+2022-04-14 13:54:44,872 : Recieved: 19842.02
+2022-04-14 13:54:45,253 : Recieved: 19841.02
+2022-04-14 13:54:45,728 : Recieved: 19787.02
+2022-04-14 13:54:46,189 : Recieved: 19786.02
+2022-04-14 13:54:46,569 : Recieved: 19732.02
+2022-04-14 13:54:46,839 : Recieved: 19673.02
+2022-04-14 13:54:47,316 : Recieved: 19650.02
+2022-04-14 13:54:47,615 : Recieved: Close
+2022-04-14 13:54:47,647 : Recieved: 19582.02
+2022-04-14 13:54:47,873 : Recieved: Ready
+2022-04-14 13:54:48,026 : Sent: Sync
+2022-04-14 13:54:48,106 : Recieved: Ready
+2022-04-14 13:54:49,682 : Sent: S1.0
+2022-04-14 13:54:49,686 : Sent: 21410.05610169744
+2022-04-14 13:54:49,688 : Moving: 6.851520863266046 inches...
+2022-04-14 13:54:49,700 : Recieved: Moving
+2022-04-14 13:54:49,704 : Recieved: 19585.02
+2022-04-14 13:54:49,723 : Recieved: 19585.02
+2022-04-14 13:54:49,868 : Recieved: 19668.02
+2022-04-14 13:54:50,009 : Recieved: 19765.02
+2022-04-14 13:54:50,020 : Recieved: 19863.02
+2022-04-14 13:54:50,162 : Recieved: 19961.02
+2022-04-14 13:54:50,304 : Recieved: 20060.02
+2022-04-14 13:54:50,315 : Recieved: 20159.02
+2022-04-14 13:54:50,448 : Recieved: 20258.02
+2022-04-14 13:54:50,588 : Recieved: 20357.02
+2022-04-14 13:54:50,601 : Recieved: 20456.02
+2022-04-14 13:54:50,744 : Recieved: 20555.02
+2022-04-14 13:54:50,884 : Recieved: 20654.02
+2022-04-14 13:54:50,903 : Recieved: 20754.02
+2022-04-14 13:54:51,040 : Recieved: 20852.02
+2022-04-14 13:54:51,178 : Recieved: 20951.02
+2022-04-14 13:54:51,187 : Recieved: 20952.02
+2022-04-14 13:54:51,203 : Recieved: 21051.02
+2022-04-14 13:54:51,212 : Recieved: 21052.02
+2022-04-14 13:54:51,349 : Recieved: 21149.02
+2022-04-14 13:54:51,492 : Recieved: 21246.02
+2022-04-14 13:54:51,510 : Recieved: Close
+2022-04-14 13:54:52,133 : Recieved: 21524.02
+2022-04-14 13:54:52,144 : Recieved: Ready
+2022-04-14 13:54:53,048 : Sent: Sync
+2022-04-14 13:54:53,157 : Recieved: Ready
+2022-04-14 13:54:58,065 : Sent: Sync
+2022-04-14 13:54:58,174 : Recieved: Ready
+2022-04-14 13:55:03,074 : Sent: Sync
+2022-04-14 13:55:03,090 : Recieved: Ready
+2022-04-14 13:55:08,089 : Sent: Sync
+2022-04-14 13:55:08,119 : Recieved: Ready
+2022-04-14 13:55:13,094 : Sent: Sync
+2022-04-14 13:55:13,157 : Recieved: Ready
+2022-04-14 13:55:18,110 : Sent: Sync
+2022-04-14 13:55:18,189 : Recieved: Ready
+2022-04-14 13:55:23,118 : Sent: Sync
+2022-04-14 13:55:23,212 : Recieved: Ready
+2022-04-14 13:55:28,125 : Sent: Sync
+2022-04-14 13:55:28,236 : Recieved: Ready
+2022-04-14 13:55:33,142 : Sent: Sync
+2022-04-14 13:55:33,143 : Recieved: Ready
+2022-04-14 13:55:38,158 : Sent: Sync
+2022-04-14 13:55:38,172 : Recieved: Ready
+2022-04-14 13:55:43,173 : Sent: Sync
+2022-04-14 13:55:43,187 : Recieved: Ready
+2022-04-14 13:55:48,185 : Sent: Sync
+2022-04-14 13:55:48,216 : Recieved: Ready
+2022-04-14 13:55:53,196 : Sent: Sync
+2022-04-14 13:55:53,258 : Recieved: Ready
+2022-04-14 13:55:58,206 : Sent: Sync
+2022-04-14 13:55:58,301 : Recieved: Ready
+2022-04-14 13:56:03,218 : Sent: Sync
+2022-04-14 13:56:03,329 : Recieved: Ready
+2022-04-14 13:56:08,226 : Sent: Sync
+2022-04-14 13:56:08,336 : Recieved: Ready
+2022-04-14 13:56:13,243 : Sent: Sync
+2022-04-14 13:56:13,243 : Recieved: Ready
+2022-04-14 13:56:18,254 : Sent: Sync
+2022-04-14 13:56:18,268 : Recieved: Ready
+2022-04-14 13:56:23,263 : Sent: Sync
+2022-04-14 13:56:23,311 : Recieved: Ready
+2022-04-14 13:56:28,276 : Sent: Sync
+2022-04-14 13:56:28,339 : Recieved: Ready
+2022-04-14 13:56:33,285 : Sent: Sync
+2022-04-14 13:56:33,364 : Recieved: Ready
+2022-04-14 13:56:38,290 : Sent: Sync
+2022-04-14 13:56:38,383 : Recieved: Ready
+2022-04-14 13:56:43,305 : Sent: Sync
+2022-04-14 13:56:43,399 : Recieved: Ready
+2022-04-14 13:56:48,316 : Sent: Sync
+2022-04-14 13:56:48,412 : Recieved: Ready
+2022-04-14 13:56:53,321 : Sent: Sync
+2022-04-14 13:56:53,416 : Recieved: Ready
+2022-04-14 13:56:58,328 : Sent: Sync
+2022-04-14 13:56:58,330 : Recieved: Ready
+2022-04-14 13:57:03,334 : Sent: Sync
+2022-04-14 13:57:03,347 : Recieved: Ready
+2022-04-14 13:57:05,979 : Sent: S1.0
+2022-04-14 13:57:05,998 : Sent: 19232.00246658453
+2022-04-14 13:57:06,000 : Moving: -8.590533816364882 inches...
+2022-04-14 13:57:06,103 : Recieved: Moving
+2022-04-14 13:57:06,105 : Recieved: 21510.02
+2022-04-14 13:57:06,132 : Recieved: 21421.02
+2022-04-14 13:57:06,276 : Recieved: 21327.02
+2022-04-14 13:57:06,415 : Recieved: 21232.02
+2022-04-14 13:57:06,432 : Recieved: 21138.02
+2022-04-14 13:57:06,571 : Recieved: 21042.02
+2022-04-14 13:57:06,710 : Recieved: 20947.02
+2022-04-14 13:57:06,721 : Recieved: 20946.02
+2022-04-14 13:57:06,732 : Recieved: 20852.02
+2022-04-14 13:57:06,868 : Recieved: 20757.02
+2022-04-14 13:57:06,879 : Recieved: 20756.02
+2022-04-14 13:57:07,009 : Recieved: 20662.02
+2022-04-14 13:57:07,020 : Recieved: 20662.02
+2022-04-14 13:57:07,031 : Recieved: 20567.02
+2022-04-14 13:57:07,040 : Recieved: 20566.02
+2022-04-14 13:57:07,182 : Recieved: 20471.02
+2022-04-14 13:57:07,191 : Recieved: 20470.02
+2022-04-14 13:57:07,321 : Recieved: 20376.02
+2022-04-14 13:57:07,333 : Recieved: 20279.02
+2022-04-14 13:57:07,343 : Recieved: 20279.02
+2022-04-14 13:57:07,478 : Recieved: 20183.02
+2022-04-14 13:57:07,489 : Recieved: 20182.02
+2022-04-14 13:57:07,620 : Recieved: 20088.02
+2022-04-14 13:57:07,632 : Recieved: 19992.02
+2022-04-14 13:57:07,777 : Recieved: 19896.02
+2022-04-14 13:57:07,862 : Recieved: 19895.02
+2022-04-14 13:57:07,872 : Recieved: 19801.02
+2022-04-14 13:57:08,012 : Recieved: 19705.02
+2022-04-14 13:57:08,038 : Recieved: 19609.02
+2022-04-14 13:57:08,186 : Recieved: 19514.02
+2022-04-14 13:57:08,327 : Recieved: 19418.02
+2022-04-14 13:57:08,337 : Recieved: 19396.02
+2022-04-14 13:57:08,406 : Recieved: Close
+2022-04-14 13:57:08,981 : Recieved: 19130.02
+2022-04-14 13:57:09,006 : Recieved: Ready
+2022-04-14 13:57:09,134 : Sent: Sync
+2022-04-14 13:57:09,245 : Recieved: Ready
+2022-04-14 13:57:12,020 : Sent: S1.0
+2022-04-14 13:57:12,023 : Sent: 21396.585748066755
+2022-04-14 13:57:12,026 : Moving: 8.495139946319227 inches...
+2022-04-14 13:57:12,138 : Recieved: Moving
+2022-04-14 13:57:20,325 : Sent: S1.0
+2022-04-14 13:57:20,420 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-14 13:57:20,482 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-14 13:57:20,545 : Reconnecting!
+2022-04-14 13:57:25,565 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 13:57:30,762 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 13:57:35,782 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 13:57:40,799 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 13:57:45,817 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 13:57:50,822 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 13:57:55,829 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 13:58:00,849 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 13:58:05,855 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 13:58:10,888 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 13:58:15,894 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 13:58:15,899 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 13:58:15,903 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 13:58:20,921 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 13:58:25,929 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 13:58:30,952 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 13:58:30,958 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 13:58:30,982 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 13:58:35,960 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 13:58:40,983 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 13:58:40,989 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 13:58:40,992 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 13:58:46,010 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 13:58:51,016 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 13:58:56,024 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 13:59:01,031 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 13:59:01,037 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 13:59:01,054 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 13:59:06,041 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 13:59:11,058 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 13:59:11,063 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 13:59:11,074 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 13:59:16,066 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 13:59:21,072 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 13:59:26,081 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 13:59:26,088 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 13:59:26,091 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 13:59:31,102 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 13:59:36,110 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 13:59:41,117 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 13:59:46,124 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 13:59:51,131 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 13:59:56,139 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 13:59:56,146 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 13:59:56,161 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 14:00:01,150 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:00:01,154 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 14:00:01,172 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 14:00:06,156 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:00:11,162 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:00:16,187 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:00:21,194 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:00:21,200 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 14:00:21,203 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 14:00:26,221 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:00:26,226 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 14:00:26,228 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 14:00:31,241 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:00:36,249 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:00:36,255 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 14:00:36,258 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 14:00:41,279 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:00:46,285 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:00:46,292 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 14:00:46,295 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 14:00:51,308 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:00:51,313 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 14:00:51,340 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 14:00:56,315 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:00:56,322 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 14:00:56,325 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 14:01:01,348 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:01:01,353 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 14:01:01,355 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 14:01:06,379 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:01:06,386 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 14:01:06,409 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 14:01:11,390 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:01:16,397 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:01:16,403 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 14:01:16,406 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 14:01:21,427 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:01:21,436 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 14:01:21,440 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 14:01:26,457 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:01:31,478 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:01:36,486 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:01:41,493 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:01:46,501 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:01:51,509 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:01:51,514 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 14:01:51,536 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 14:01:56,516 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:02:01,523 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:02:06,552 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:02:11,575 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:02:11,581 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 14:02:11,584 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 14:02:16,596 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:02:21,603 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:02:26,611 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:02:31,636 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:02:36,660 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:02:41,668 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:17:30,218 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:17:35,972 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:17:40,979 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:17:45,991 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:17:51,001 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:17:56,031 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:17:56,036 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 14:17:56,047 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 14:18:01,038 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:18:06,072 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:18:06,076 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 14:18:06,096 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 14:18:11,078 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:18:16,091 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:18:21,101 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:18:21,110 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 14:18:21,114 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 14:18:26,124 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:18:31,135 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:18:36,145 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:18:41,155 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:18:46,162 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:18:51,171 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:18:56,179 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:19:01,186 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:19:01,190 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 14:19:01,200 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 14:19:06,192 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:19:11,196 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:19:16,201 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:19:21,207 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:19:26,240 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:19:31,258 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:19:36,298 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:19:41,306 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:19:46,320 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:19:51,341 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:19:56,364 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:20:01,382 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:20:06,388 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:20:11,395 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:20:16,435 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:20:21,440 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:20:26,452 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:20:31,485 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:20:36,491 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:20:41,497 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:20:41,506 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 14:20:41,534 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 14:20:46,508 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:20:51,529 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:20:56,599 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:21:01,604 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:21:06,636 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:21:11,640 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:21:16,645 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:21:21,696 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:21:26,712 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:21:31,719 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:21:36,733 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:21:41,757 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:21:46,772 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:21:51,827 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:21:56,832 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:22:01,891 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:22:06,898 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:22:11,905 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:22:16,912 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:22:16,969 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 14:22:17,004 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 14:22:21,972 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:22:26,977 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:22:31,984 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:22:36,992 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:22:42,031 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:22:47,062 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:22:52,099 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:22:57,106 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:22:57,116 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 14:22:57,174 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 14:23:02,119 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:23:07,137 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:23:12,177 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:23:12,182 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 14:23:12,228 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 14:23:17,184 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:23:22,190 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:23:27,199 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:23:27,214 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 14:23:27,280 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 14:23:32,217 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:23:32,231 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 14:23:32,265 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 14:23:37,232 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:23:42,246 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:23:47,271 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:23:47,288 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 14:23:47,367 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 14:23:52,290 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:23:57,313 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:24:02,334 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:24:07,410 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:24:12,417 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:24:12,423 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 14:24:12,427 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 14:24:17,446 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:24:22,455 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:24:27,475 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:24:32,481 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:24:37,502 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:24:42,553 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:24:47,574 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:24:52,582 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:24:57,591 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:25:02,606 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:25:02,620 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 14:25:02,716 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 14:25:07,623 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:25:07,637 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 14:25:07,675 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 14:25:12,639 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:25:17,672 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:25:22,695 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:25:27,716 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:25:32,776 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:25:37,800 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:25:42,810 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:25:47,832 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:25:52,836 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:25:52,881 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 14:25:52,909 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 14:25:57,884 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:26:02,928 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:26:07,935 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:26:07,947 : [WinError 10038] An operation was attempted on something that is not a socket
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+2022-04-14 14:26:07,978 : release unlocked lock
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 172, in recieve
+    messages = self.socket.recv(2048)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 191, in recieve
+    self.lock.release()
+RuntimeError: release unlocked lock
+2022-04-14 14:26:12,949 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:26:17,978 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:26:22,991 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:26:28,005 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:26:33,029 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:26:38,036 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:26:43,041 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:26:48,075 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:26:53,085 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:26:58,091 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:27:03,106 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:27:08,123 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-14 14:27:13,191 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 204, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 157, in reconnect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!

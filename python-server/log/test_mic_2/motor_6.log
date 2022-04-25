@@ -1,0 +1,268 @@
+2022-04-19 14:36:47,399 : Connecting...
+2022-04-19 14:36:47,495 : Sent: Yes
+2022-04-19 14:36:47,637 : Recieved: Ready
+2022-04-19 14:36:47,663 : Recieved: Ready
+2022-04-19 14:36:47,682 : Connected! (1 attempt(s))
+2022-04-19 14:36:47,784 : Sent: E0.0
+2022-04-19 14:36:47,786 : Sent: DM1
+2022-04-19 14:36:47,788 : Sent: DE-1
+2022-04-19 14:36:47,790 : Sent: kP1.0
+2022-04-19 14:36:47,792 : Sent: kI0.0
+2022-04-19 14:36:47,796 : Sent: kD0.0
+2022-04-19 14:36:47,816 : Sent: Sync
+2022-04-19 14:36:47,887 : Recieved: Ready
+2022-04-19 14:36:52,820 : Sent: Sync
+2022-04-19 14:36:52,821 : [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-04-19 14:36:52,953 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:53,060 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:53,164 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:53,271 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:53,377 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:53,481 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:53,584 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:53,689 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:53,793 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:53,899 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:54,006 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:54,110 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:54,216 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:54,322 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:54,431 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:54,538 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:54,645 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:54,752 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:54,859 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:54,965 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:55,074 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:55,180 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:55,286 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:55,392 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:55,500 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:55,609 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:55,716 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:55,821 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:55,930 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:56,037 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:56,142 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:56,248 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:56,355 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:56,461 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:56,567 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:56,675 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:56,781 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:56,888 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:56,994 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:57,100 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:57,209 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:57,384 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:57,492 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:57,600 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:57,706 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:57,813 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:57,823 : [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 177, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2022-04-19 14:36:57,828 : Reconnecting!
+2022-04-19 14:37:02,840 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 177, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 85, in connect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-19 14:53:19,816 : Failed setup! (1 attempt(s))

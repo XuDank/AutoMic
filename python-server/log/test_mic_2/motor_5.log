@@ -1,0 +1,193 @@
+2022-04-19 14:36:47,392 : Connecting...
+2022-04-19 14:36:47,499 : Sent: Yes
+2022-04-19 14:36:47,710 : Recieved: Ready
+2022-04-19 14:36:47,713 : Recieved: Ready
+2022-04-19 14:36:47,717 : Connected! (1 attempt(s))
+2022-04-19 14:36:47,820 : Sent: E0.0
+2022-04-19 14:36:47,824 : Sent: DM-1
+2022-04-19 14:36:47,826 : Sent: DE1
+2022-04-19 14:36:47,828 : Sent: kP1.0
+2022-04-19 14:36:47,833 : Sent: kI0.0
+2022-04-19 14:36:47,836 : Sent: kD0.0
+2022-04-19 14:36:47,847 : Sent: Sync
+2022-04-19 14:36:47,921 : Recieved: Ready
+2022-04-19 14:36:52,922 : Sent: Sync
+2022-04-19 14:36:53,023 : Recieved: Ready
+2022-04-19 14:36:58,049 : Sent: Sync
+2022-04-19 14:36:58,175 : Recieved: Ready
+2022-04-19 14:37:03,067 : Sent: Sync
+2022-04-19 14:37:03,183 : Recieved: Ready
+2022-04-19 14:37:08,098 : Sent: Sync
+2022-04-19 14:37:08,179 : Recieved: Ready
+2022-04-19 14:37:13,126 : Sent: Sync
+2022-04-19 14:37:13,228 : Recieved: Ready
+2022-04-19 14:37:18,159 : Sent: Sync
+2022-04-19 14:37:18,232 : Recieved: Ready
+2022-04-19 14:37:23,185 : Sent: Sync
+2022-04-19 14:37:23,212 : Recieved: Ready
+2022-04-19 14:37:28,205 : Sent: Sync
+2022-04-19 14:37:33,341 : Sent: Sync
+2022-04-19 14:37:33,433 : [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-04-19 14:37:33,578 : [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-04-19 14:37:33,720 : [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-04-19 14:37:33,864 : [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-04-19 14:37:34,004 : [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-04-19 14:37:34,142 : [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-04-19 14:37:34,280 : [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-04-19 14:37:34,422 : [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-04-19 14:37:34,574 : [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-04-19 14:37:34,744 : [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-04-19 14:37:34,912 : [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-04-19 14:37:35,061 : [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-04-19 14:37:35,233 : [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-04-19 14:37:35,358 : [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-04-19 14:37:35,539 : [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-04-19 14:37:35,707 : [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-04-19 14:37:35,910 : [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-04-19 14:37:36,099 : [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-04-19 14:37:36,296 : [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-04-19 14:37:36,471 : [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-04-19 14:37:36,654 : [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-04-19 14:37:36,847 : [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-04-19 14:37:37,052 : [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-04-19 14:37:37,255 : [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-04-19 14:37:37,439 : [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-04-19 14:37:37,625 : [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-04-19 14:37:37,860 : [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-04-19 14:37:38,073 : [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-04-19 14:37:38,247 : [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 145, in recieve
+    messages = self.socket.recv(2048)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-04-19 14:37:38,397 : [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 177, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-04-19 14:37:38,443 : Reconnecting!
+2022-04-19 14:37:43,631 : Did not recieve!
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 177, in send
+    self.socket.send(bytes(f"{message}\n", "ascii"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\My Drive\School\21-22\ENGR498\AutoMic\python-server\libs\automic.py", line 85, in connect
+    raise Exception("Did not recieve!")
+Exception: Did not recieve!
+2022-04-19 14:53:19,782 : Failed setup! (1 attempt(s))
